@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="1680" height="400">
+  <rect width="100" height="100" rx="22" fill="#FAFAF7"></rect>
+  <rect x="22" y="18" width="10" height="64" rx="5" fill="#0A0A0B"></rect>
+  <circle cx="58" cy="60" r="22" fill="none" stroke="#0A0A0B" stroke-width="10"></circle>
+  <text x="124" y="72" font-family="Inter Tight, Inter, system-ui, sans-serif" font-size="60" font-weight="600" letter-spacing="-2.1" fill="#FAFAF7">Bemo<tspan font-weight="300" fill="#9A9A9E">Labs</tspan></text>
+</svg>

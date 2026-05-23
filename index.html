@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bemo Labs — Crafting thoughtful apps from Istanbul</title>
+    <meta name="description" content="Bemo Labs is an independent mobile studio. We build apps and games we'd want to use ourselves. Currently shipping Sudoku Peak." />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/bemolabs-icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/bemolabs-icon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/bemolabs-icon-16.png" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <meta property="og:title" content="Bemo Labs" />
+    <meta property="og:description" content="Crafting thoughtful apps from Istanbul." />
+    <meta property="og:image" content="/assets/brand/bemolabs-lockup-horizontal-1200.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bemolabs.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="site-header__brand" href="/" aria-label="Bemo Labs">
+                <img class="site-header__brand--light" src="/assets/brand/bemolabs-lockup-horizontal.svg" alt="Bemo Labs" />
+                <img class="site-header__brand--dark" src="/assets/brand/bemolabs-lockup-horizontal-dark.svg" alt="Bemo Labs" />
+            </a>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <img class="hero__icon" src="/assets/brand/bemolabs-icon.svg" alt="" />
+            <p class="eyebrow" data-lang="en">An independent studio</p>
+            <p class="eyebrow" data-lang="tr">Bağımsız bir stüdyo</p>
+
+            <h1 data-lang="en">Crafting thoughtful apps from Istanbul.</h1>
+            <h1 data-lang="tr">İstanbul'dan özenle hazırlanmış uygulamalar.</h1>
+
+            <p class="lead" data-lang="en">Bemo Labs builds mobile apps and games we'd want to use ourselves. Small, sharp, made to last.</p>
+            <p class="lead" data-lang="tr">Bemo Labs kendi kullanmak isteyeceğimiz mobil uygulamalar ve oyunlar yapıyor. Küçük, keskin, uzun ömürlü.</p>
+        </section>
+
+        <section class="section container">
+            <p class="eyebrow" data-lang="en">Our apps</p>
+            <p class="eyebrow" data-lang="tr">Uygulamalarımız</p>
+
+            <h2 data-lang="en">What we're shipping</h2>
+            <h2 data-lang="tr">Üzerinde çalıştıklarımız</h2>
+
+            <div class="apps">
+                <a class="app-card" href="/apps/sudokupeak/">
+                    <div class="app-card__icon">
+                        <img src="/apps/sudokupeak/assets/icon-512.png" alt="Sudoku Peak app icon" />
+                    </div>
+                    <h3 class="app-card__title">Sudoku Peak</h3>
+                    <p class="app-card__tagline" data-lang="en">A classic Sudoku built for daily players. Streaks, hints, themes, leaderboards — across iPhone, iPad, Mac and Apple Watch.</p>
+                    <p class="app-card__tagline" data-lang="tr">Günlük oyuncular için tasarlanmış klasik bir Sudoku. Seriler, ipuçları, temalar, sıralamalar — iPhone, iPad, Mac ve Apple Watch'ta.</p>
+                    <div class="app-card__badges">
+                        <span class="badge">iOS · iPadOS · macOS · watchOS</span>
+                        <span class="badge badge--coming" data-lang="en">Coming soon</span>
+                        <span class="badge badge--coming" data-lang="tr">Çok yakında</span>
+                    </div>
+                    <span class="app-card__cta" data-lang="en">Learn more</span>
+                    <span class="app-card__cta" data-lang="tr">Detayları gör</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__wordmark">
+                <img src="/assets/brand/bemolabs-wordmark.svg" alt="Bemo Labs" />
+            </div>
+            <nav class="site-footer__links">
+                <a href="/apps/sudokupeak/">Sudoku Peak</a>
+                <a href="/apps/sudokupeak/privacy.html" data-lang="en">Privacy</a>
+                <a href="/apps/sudokupeak/privacy.html?lang=tr" data-lang="tr">Gizlilik</a>
+                <a href="/apps/sudokupeak/support.html" data-lang="en">Support</a>
+                <a href="/apps/sudokupeak/support.html?lang=tr" data-lang="tr">Destek</a>
+                <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>
+            </nav>
+            <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px;">© Bemo Labs</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/lang.js"></script>
+</body>
+</html>

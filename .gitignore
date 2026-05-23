@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Jekyll build output (we don't actually use Jekyll but GitHub Pages
+# may produce these locally if you run it for previewing)
+_site/
+.jekyll-cache/
+
+# Editor scratch
+.vscode/
+.idea/
+*.swp

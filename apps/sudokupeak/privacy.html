@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Sudoku Peak · Bemo Labs</title>
+    <meta name="description" content="The privacy policy that governs Sudoku Peak. We're transparent about every third-party service the app uses." />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/bemolabs-icon.svg" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="site-header__brand" href="/" aria-label="Bemo Labs">
+                <img class="site-header__brand--light" src="/assets/brand/bemolabs-lockup-horizontal.svg" alt="Bemo Labs" />
+                <img class="site-header__brand--dark" src="/assets/brand/bemolabs-lockup-horizontal-dark.svg" alt="Bemo Labs" />
+            </a>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="legal" data-lang="en">
+            <h1>Privacy Policy</h1>
+            <p class="updated">Last updated: 23 May 2026</p>
+
+            <p>This policy describes how <strong>Sudoku Peak</strong>, made by <strong>Bemo Labs</strong>, handles the data it touches. It covers every Sudoku Peak build that ships through the Apple App Store — iPhone, iPad, Mac and Apple Watch.</p>
+
+            <p>The short version: we don't run our own servers, we don't collect a personal account from you, and the only third parties involved are Apple's own services and Google AdMob (only on iPhone and iPad, only for rewarded ads you choose to watch).</p>
+
+            <h2>1. Who we are</h2>
+            <p>Bemo Labs is an independent mobile studio based in Istanbul, Turkey. You can reach us at <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>.</p>
+
+            <h2>2. Data Sudoku Peak stores on your device</h2>
+            <p>Sudoku Peak keeps the following information on the device itself, using Apple's standard storage APIs (CoreData + UserDefaults):</p>
+            <ul>
+                <li>The current saved puzzle (board state, elapsed time, mistakes, hints remaining)</li>
+                <li>Historical game runs and personal statistics (completion times, scores, streak length)</li>
+                <li>Daily puzzle completions</li>
+                <li>Preference choices (selected theme, language, notification opt-in)</li>
+                <li>Whether you finished onboarding</li>
+            </ul>
+            <p>None of this is sent to Bemo Labs. We do not operate a backend that would receive it.</p>
+
+            <h2>3. iCloud sync (Apple's CloudKit)</h2>
+            <p>If you're signed in to iCloud on your Apple devices, Sudoku Peak syncs the data listed above through <strong>Apple's CloudKit</strong> so your progress is the same on every device you own. The data lives in your private CloudKit container; Apple's privacy policy governs how Apple handles it.</p>
+            <p>If you sign out of iCloud or disable iCloud for Sudoku Peak in iOS Settings, sync stops. Local data on each device is unaffected.</p>
+
+            <h2>4. Game Center</h2>
+            <p>Sudoku Peak submits the following to <strong>Apple Game Center</strong> when you finish a puzzle:</p>
+            <ul>
+                <li>Completion time for the difficulty level (best-time leaderboards)</li>
+                <li>Cumulative scores (best-score leaderboards)</li>
+                <li>Achievement progress (Flawless, Marathoner, Fast Thinker)</li>
+            </ul>
+            <p>Game Center associates this data with your Game Center identity, which is governed by Apple's privacy policy. We never see the underlying Apple ID — only the Game Center alias you chose.</p>
+
+            <h2>5. Notifications</h2>
+            <p>If you opt in to notifications, Sudoku Peak schedules <strong>local</strong> reminders on your device (streak reminders, near-miss nudges, weekly recaps). These never leave your device. We do not use push notifications, so we don't collect a device token.</p>
+
+            <h2>6. Advertising (iPhone and iPad only)</h2>
+            <p>On iPhone and iPad we show <strong>rewarded video ads from Google AdMob</strong> when you choose to watch one in exchange for a hint. You never see ads anywhere else in the app, and ads are not shown on Mac or Apple Watch at all.</p>
+
+            <h3>What AdMob collects</h3>
+            <p>AdMob may collect the following while serving an ad:</p>
+            <ul>
+                <li>Your device's advertising identifier (IDFA) — only if you grant tracking permission via Apple's App Tracking Transparency prompt. If you deny it, AdMob falls back to non-personalized ads and does not use the IDFA.</li>
+                <li>Device model, OS version, app version</li>
+                <li>Coarse location (country / region, derived from IP, never precise)</li>
+                <li>Diagnostic and performance data about ad delivery</li>
+            </ul>
+            <p>This data is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. Bemo Labs only receives aggregate AdMob reports — we never see your IDFA or any AdMob-collected data tied to your identity.</p>
+
+            <h3>Ad content filtering</h3>
+            <p>We've configured AdMob to block the following categories regardless of any other setting:</p>
+            <ul>
+                <li>Adult content and dating</li>
+                <li>Gambling, casino, sports betting</li>
+                <li>Alcohol</li>
+                <li>Tobacco, vaping, e-cigarettes</li>
+                <li>Prescription drugs</li>
+                <li>Political ads</li>
+            </ul>
+            <p>Ad content rating is set to "General audiences" (G). If you ever see an ad that violates this, please email <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a> with a screenshot and we'll forward it to Google.</p>
+
+            <h3>EU / GDPR consent</h3>
+            <p>If you're in the European Economic Area, the United Kingdom, or Switzerland, the app shows Google's Consent Management Platform (UMP) before any ad is requested. You can accept personalized ads, accept only non-personalized ads, or refuse advertising-related cookies. Your choice is stored on your device and respected on every ad request.</p>
+
+            <h2>7. Children</h2>
+            <p>Sudoku Peak is rated 4+ on the App Store. We do not knowingly target children under 13 and do not collect any data from them. If you believe a child has provided personal information, please contact us and we'll delete it.</p>
+
+            <h2>8. Your rights</h2>
+            <p>You can do all of the following at any time:</p>
+            <ul>
+                <li><strong>Stop sync</strong>: sign out of iCloud or disable iCloud for Sudoku Peak in iOS Settings → Apple ID → iCloud.</li>
+                <li><strong>Stop tracking</strong>: iOS Settings → Privacy &amp; Security → Tracking → toggle Sudoku Peak off.</li>
+                <li><strong>Revise consent</strong>: tap any future "Watch ad" flow to re-trigger the GDPR consent form, or reset the app via iOS Settings → Sudoku Peak → Reset data.</li>
+                <li><strong>Delete all data</strong>: uninstall Sudoku Peak. Local data is removed by iOS; iCloud copies are removed by Apple per their standard retention policy.</li>
+                <li><strong>Make a privacy request</strong>: email <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>. We respond within 30 days.</li>
+            </ul>
+
+            <h2>9. Security</h2>
+            <p>We don't operate a backend, so there's no Bemo Labs database that could be breached. Data on your device is protected by iOS / iPadOS / macOS / watchOS sandboxing and disk encryption. Data in iCloud and Game Center is protected by Apple's standard end-to-end and at-rest encryption.</p>
+
+            <h2>10. Changes to this policy</h2>
+            <p>If we materially change anything (e.g. add a new ad network, add a new third-party service), we'll update the "Last updated" date above and surface the change inside the app on next launch. Continued use of Sudoku Peak after a material change means you accept the revised policy.</p>
+
+            <h2>11. Contact</h2>
+            <p>Questions, requests, or just hello: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a></p>
+        </article>
+
+        <article class="legal" data-lang="tr">
+            <h1>Gizlilik Politikası</h1>
+            <p class="updated">Son güncelleme: 23 Mayıs 2026</p>
+
+            <p>Bu politika, <strong>Bemo Labs</strong> tarafından geliştirilen <strong>Sudoku Peak</strong>'in dokunduğu verileri nasıl ele aldığını anlatır. Apple App Store üzerinden dağıtılan tüm Sudoku Peak sürümlerini — iPhone, iPad, Mac ve Apple Watch — kapsar.</p>
+
+            <p>Kısa özet: Kendi sunucularımızı çalıştırmıyoruz, senden kişisel bir hesap istemiyoruz, ve işin içinde olan tek üçüncü taraflar Apple'ın kendi servisleri ve Google AdMob (yalnızca iPhone ve iPad'de, yalnızca senin izlemeyi seçtiğin ödüllü reklamlar için).</p>
+
+            <h2>1. Biz kimiz</h2>
+            <p>Bemo Labs, İstanbul merkezli bağımsız bir mobil uygulama stüdyosudur. Bize <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a> üzerinden ulaşabilirsin.</p>
+
+            <h2>2. Sudoku Peak'in cihazında sakladığı veriler</h2>
+            <p>Sudoku Peak aşağıdaki bilgileri Apple'ın standart depolama API'leri (CoreData + UserDefaults) ile cihazın üzerinde tutar:</p>
+            <ul>
+                <li>Mevcut kayıtlı bulmaca (tahta durumu, geçen süre, hatalar, kalan ipuçları)</li>
+                <li>Geçmiş oyun verileri ve kişisel istatistikler (tamamlama süreleri, skorlar, seri uzunluğu)</li>
+                <li>Günlük bulmaca tamamlamaları</li>
+                <li>Tercih seçimleri (seçili tema, dil, bildirim izni)</li>
+                <li>Onboarding'in tamamlanıp tamamlanmadığı</li>
+            </ul>
+            <p>Bunların hiçbiri Bemo Labs'a gönderilmez. Veriyi alacak bir backend işletmiyoruz.</p>
+
+            <h2>3. iCloud senkronizasyonu (Apple CloudKit)</h2>
+            <p>Apple cihazlarında iCloud'a giriş yaptıysan, Sudoku Peak yukarıdaki verileri <strong>Apple CloudKit</strong> üzerinden senkronize eder; böylece tüm cihazlarında ilerlemen aynı olur. Veri özel CloudKit konteynerinde durur; Apple'ın gizlilik politikası Apple'ın bu veriyi nasıl ele aldığını belirler.</p>
+            <p>iCloud'dan çıkış yaparsan veya iOS Ayarlar'dan Sudoku Peak için iCloud'u kapatırsan senkronizasyon durur. Her cihazdaki yerel veri etkilenmez.</p>
+
+            <h2>4. Game Center</h2>
+            <p>Bir bulmacayı bitirdiğinde Sudoku Peak şunları <strong>Apple Game Center</strong>'a gönderir:</p>
+            <ul>
+                <li>Zorluk seviyesi için tamamlama süresi (en iyi süre sıralamaları)</li>
+                <li>Birikmiş skorlar (en iyi skor sıralamaları)</li>
+                <li>Başarım ilerlemesi (Kusursuz, Maratoncu, Hızlı Düşünür)</li>
+            </ul>
+            <p>Game Center bu veriyi seçtiğin Game Center kimliğine bağlar; Apple'ın gizlilik politikası bu süreci yönetir. Apple ID'nin kendisini hiçbir zaman görmeyiz — sadece seçtiğin Game Center takma adını.</p>
+
+            <h2>5. Bildirimler</h2>
+            <p>Bildirimlere izin verirsen Sudoku Peak cihazında <strong>yerel</strong> hatırlatmalar planlar (seri hatırlatıcısı, rekor kıl payı kaçırma uyarıları, haftalık özet). Bunlar cihazından hiç çıkmaz. Push bildirim kullanmıyoruz, dolayısıyla cihaz token'ı toplamıyoruz.</p>
+
+            <h2>6. Reklamlar (yalnızca iPhone ve iPad)</h2>
+            <p>iPhone ve iPad'de bir ipucu karşılığında izlemeyi seçtiğin <strong>Google AdMob ödüllü video reklamları</strong> gösteriyoruz. Uygulamada başka hiçbir yerde reklam görmezsin; Mac ve Apple Watch'ta hiç reklam yok.</p>
+
+            <h3>AdMob'un topladığı veriler</h3>
+            <p>AdMob bir reklam sunarken şunları toplayabilir:</p>
+            <ul>
+                <li>Cihazının reklam tanımlayıcısı (IDFA) — yalnızca Apple'ın App Tracking Transparency penceresinden izin verirsen. Reddedersen AdMob kişiselleştirilmemiş reklama döner ve IDFA'yı kullanmaz.</li>
+                <li>Cihaz modeli, işletim sistemi sürümü, uygulama sürümü</li>
+                <li>Kaba konum (ülke / bölge — IP'den türetilir, asla hassas değil)</li>
+                <li>Reklam dağıtımı hakkında tanılama ve performans verileri</li>
+            </ul>
+            <p>Bu veriler <a href="https://policies.google.com/privacy?hl=tr" target="_blank" rel="noopener">Google'ın Gizlilik Politikası</a> kapsamındadır. Bemo Labs yalnızca AdMob'un toplu raporlarını alır — IDFA'nı veya kimliğine bağlı AdMob verilerini asla görmeyiz.</p>
+
+            <h3>Reklam içerik filtreleme</h3>
+            <p>AdMob'u şu kategorileri her durumda engelleyecek şekilde ayarladık:</p>
+            <ul>
+                <li>Yetişkin içerik ve flört</li>
+                <li>Kumar, casino, spor bahisleri</li>
+                <li>Alkol</li>
+                <li>Tütün, vaping, elektronik sigara</li>
+                <li>Reçeteli ilaçlar</li>
+                <li>Politik reklamlar</li>
+            </ul>
+            <p>Reklam içerik derecelendirmesi "Genel kitle" (G) olarak ayarlandı. Bu listeyi ihlal eden bir reklam görürsen lütfen ekran görüntüsüyle birlikte <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a> adresine yaz; Google'a ileteceğiz.</p>
+
+            <h3>AB / GDPR onayı</h3>
+            <p>Avrupa Ekonomik Bölgesi'nde, Birleşik Krallık'ta veya İsviçre'de isen, herhangi bir reklam talebinden önce uygulama Google'ın Onay Yönetim Platformu'nu (UMP) gösterir. Kişiselleştirilmiş reklamları kabul edebilir, yalnızca kişiselleştirilmemiş reklamları kabul edebilir veya reklamla ilgili çerezleri reddedebilirsin. Seçimin cihazında saklanır ve her reklam talebinde uygulanır.</p>
+
+            <h2>7. Çocuklar</h2>
+            <p>Sudoku Peak App Store'da 4+ olarak derecelendirilmiştir. 13 yaşın altındaki çocukları bilerek hedeflemeyiz ve onlardan veri toplamayız. Bir çocuğun kişisel bilgi sağladığını düşünüyorsan lütfen bize ulaş; sileceğiz.</p>
+
+            <h2>8. Haklarınız</h2>
+            <p>Aşağıdakilerin tümünü istediğin zaman yapabilirsin:</p>
+            <ul>
+                <li><strong>Senkronu durdur</strong>: iCloud'dan çıkış yap ya da iOS Ayarlar → Apple ID → iCloud üzerinden Sudoku Peak için iCloud'u kapat.</li>
+                <li><strong>Takibi durdur</strong>: iOS Ayarlar → Gizlilik ve Güvenlik → İzleme → Sudoku Peak'i kapat.</li>
+                <li><strong>Onayı güncelle</strong>: ileride bir "Reklam izle" akışına dokunarak GDPR onay penceresini yeniden tetikle ya da iOS Ayarlar → Sudoku Peak → Verileri sıfırla.</li>
+                <li><strong>Tüm verileri sil</strong>: Sudoku Peak'i kaldır. Yerel veriyi iOS siler; iCloud kopyaları Apple'ın standart saklama politikasına göre silinir.</li>
+                <li><strong>Gizlilik talebinde bulun</strong>: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a> adresine yaz. 30 gün içinde yanıtlıyoruz.</li>
+            </ul>
+
+            <h2>9. Güvenlik</h2>
+            <p>Backend işletmiyoruz, dolayısıyla saldırıya uğrayabilecek bir Bemo Labs veritabanı yok. Cihazındaki veri, iOS / iPadOS / macOS / watchOS sandbox'ı ve disk şifrelemesiyle korunur. iCloud ve Game Center'daki veri Apple'ın standart uçtan uca ve dinlenme şifrelemesi ile korunur.</p>
+
+            <h2>10. Bu politikadaki değişiklikler</h2>
+            <p>Önemli bir şey değişirse (örneğin yeni bir reklam ağı eklenirse, yeni bir üçüncü taraf servis eklenirse) yukarıdaki "Son güncelleme" tarihini değiştirir ve sonraki açılışta uygulama içinde haber veririz. Önemli değişiklikten sonra Sudoku Peak'i kullanmaya devam etmen güncellenmiş politikayı kabul ettiğin anlamına gelir.</p>
+
+            <h2>11. İletişim</h2>
+            <p>Sorular, talepler ya da sadece merhaba demek için: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a></p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__wordmark">
+                <img src="/assets/brand/bemolabs-wordmark.svg" alt="Bemo Labs" />
+            </div>
+            <nav class="site-footer__links">
+                <a href="/">Bemo Labs</a>
+                <a href="/apps/sudokupeak/">Sudoku Peak</a>
+                <a href="/apps/sudokupeak/support.html" data-lang="en">Support</a>
+                <a href="/apps/sudokupeak/support.html?lang=tr" data-lang="tr">Destek</a>
+                <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>
+            </nav>
+            <p style="margin:0; font-family:'JetBrains Mono',monospace; font-size:11px;">© Bemo Labs</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/lang.js"></script>
+    <script>
+        // Respect ?lang=tr in the URL so links from the footer / share
+        // can land directly on the Turkish copy.
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang');
+            if (lang === 'tr' || lang === 'en') {
+                localStorage.setItem('bemolabs.lang', lang);
+                document.documentElement.lang = lang;
+                document.querySelectorAll('.lang-switch button').forEach((btn) => {
+                    btn.classList.toggle('is-active', btn.dataset.setLang === lang);
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
