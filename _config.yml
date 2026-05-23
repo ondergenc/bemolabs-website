@@ -1,19 +1,9 @@
-# GitHub Pages config — we don't use Jekyll templating; this file only
-# exists to tell Jekyll which paths to leave alone. Underscore-prefixed
-# files / directories are normally skipped by Jekyll, so anything that
-# starts with `_` (e.g. _config.yml itself) is also excluded from the
-# published site by default — that's intentional.
-
-# Don't run the site through Markdown / Liquid. Everything we ship is
-# plain HTML + CSS + a sprinkle of JS.
-markdown: false
-liquid: false
-
-# Make sure no built-in plugin rewrites our paths.
-plugins: []
-
-# Files / paths we never want published.
-exclude:
-  - README.md
-  - .gitignore
-  - "*.md"
+# Intentionally empty.
+#
+# A `.nojekyll` file in the repo root tells GitHub Pages to skip Jekyll
+# entirely and serve the static files as-is. We're not using Jekyll
+# templating, Markdown rendering or Liquid — just HTML + CSS + a sprinkle
+# of JS — so the bypass is the right move.
+#
+# We keep _config.yml around so future contributors know this is a
+# deliberate choice rather than a missing file.
