@@ -56,12 +56,15 @@
                     <p data-lang="tr">Sudoku Peak, her gün dönen oyuncular için tasarlanmış klasik bir Sudoku. Günlük bulmacalar, seriler, ilerledikçe açılan temalar, Game Center sıralamaları, Apple Watch komplikasyonu ve 21 dil — sakin bir deneyim sunmak için tasarlandı.</p>
 
                     <div class="cta-row">
-                        <span class="btn btn--disabled" data-lang="en">Coming to the App Store</span>
-                        <span class="btn btn--disabled" data-lang="tr">Yakında App Store'da</span>
+                        <a class="btn btn--primary" href="https://apps.apple.com/us/app/sudoku-peak-brain-trainer/id6770268044" data-lang="en">Download on the App Store</a>
+                        <a class="btn btn--primary" href="https://apps.apple.com/us/app/sudoku-peak-brain-trainer/id6770268044" data-lang="tr">App Store'dan indir</a>
                     </div>
 
-                    <p style="margin-top:24px; font-size:13px;" data-lang="en">We'll drop a QR code here when Sudoku Peak goes live on the App Store.</p>
-                    <p style="margin-top:24px; font-size:13px;" data-lang="tr">Sudoku Peak App Store'a girdiğinde buraya QR kodu yerleştireceğiz.</p>
+                    <div class="qr-card" style="margin-top:28px;">
+                        <img src="/apps/sudokupeak/assets/qr-appstore.png" alt="QR code to download Sudoku Peak on the App Store" />
+                    </div>
+                    <p class="qr-caption" data-lang="en">Scan to open in the App Store</p>
+                    <p class="qr-caption" data-lang="tr">App Store'da açmak için tara</p>
                 </div>
             </div>
         </section>
@@ -144,5 +147,18 @@
     </footer>
 
     <script src="/assets/js/lang.js"></script>
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang');
+            if (lang === 'tr' || lang === 'en') {
+                localStorage.setItem('bemolabs.lang', lang);
+                document.documentElement.lang = lang;
+                document.querySelectorAll('.lang-switch button').forEach((btn) => {
+                    btn.classList.toggle('is-active', btn.dataset.setLang === lang);
+                });
+            }
+        })();
+    </script>
 </body>
 </html>
