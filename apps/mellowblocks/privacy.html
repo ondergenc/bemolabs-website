@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Mellow Blocks · Bemo Labs</title>
+    <meta name="description" content="The privacy policy for Mellow Blocks will be published before the app launches." />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/bemolabs-icon.svg" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF07MJT8CV"></script>
+    <script src="/assets/js/analytics.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="site-header__brand" href="/" aria-label="Bemo Labs">
+                <img class="site-header__brand--light" src="/assets/brand/bemolabs-lockup-horizontal.svg" alt="Bemo Labs" />
+                <img class="site-header__brand--dark" src="/assets/brand/bemolabs-lockup-horizontal-dark.svg" alt="Bemo Labs" />
+            </a>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="legal" data-lang="en">
+            <h1>Privacy Policy</h1>
+            <p class="updated">Coming before launch</p>
+
+            <p>Mellow Blocks is in final polish for its iOS and Android release. The full privacy policy will be published here before the app goes live on the App Store and Google Play, and the in-app "Privacy" link will point back to this page.</p>
+
+            <p>While the final text is being prepared, the policy will follow the same principles as our other apps:</p>
+            <ul>
+                <li>We don't run our own servers and don't collect a personal account from you.</li>
+                <li>Game data lives on your device, with platform-native cloud sync only when you opt in.</li>
+                <li>Any third-party services used (advertising, leaderboards, analytics) will be disclosed by name and scope, with opt-out paths.</li>
+            </ul>
+
+            <p>Questions in the meantime: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>.</p>
+        </article>
+
+        <article class="legal" data-lang="tr">
+            <h1>Gizlilik Politikası</h1>
+            <p class="updated">Yayın öncesinde eklenecek</p>
+
+            <p>Mellow Blocks, iOS ve Android yayını için son rötuş aşamasında. Tam gizlilik politikası, uygulama App Store ve Google Play'de yayına girmeden önce burada yayımlanacak ve uygulama içindeki "Gizlilik" bağlantısı bu sayfaya yönlendirilecek.</p>
+
+            <p>Nihai metin hazırlanırken politika diğer uygulamalarımızla aynı ilkeleri takip edecek:</p>
+            <ul>
+                <li>Kendi sunucularımızı çalıştırmıyoruz ve senden kişisel bir hesap istemiyoruz.</li>
+                <li>Oyun verisi cihazında durur; platforma özel bulut senkronizasyonu yalnızca açıkça izin verdiğinde devreye girer.</li>
+                <li>Kullanılan tüm üçüncü taraf servisleri (reklam, sıralamalar, analitik) ad ve kapsamla birlikte vazgeçme yöntemleri ile açıklanacak.</li>
+            </ul>
+
+            <p>Bu süreçte sorular için: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>.</p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__wordmark">
+                <img src="/assets/brand/bemolabs-wordmark.svg" alt="Bemo Labs" />
+            </div>
+            <nav class="site-footer__links">
+                <a href="/">Bemo Labs</a>
+                <a href="/apps/mellowblocks/">Mellow Blocks</a>
+                <a href="/apps/mellowblocks/support.html" data-lang="en">Support</a>
+                <a href="/apps/mellowblocks/support.html?lang=tr" data-lang="tr">Destek</a>
+                <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>
+            </nav>
+            <p style="margin:0; font-family:'JetBrains Mono',monospace; font-size:11px;">© Bemo Labs</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/lang.js"></script>
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang');
+            if (lang === 'tr' || lang === 'en') {
+                localStorage.setItem('bemolabs.lang', lang);
+                document.documentElement.lang = lang;
+                document.querySelectorAll('.lang-switch button').forEach((btn) => {
+                    btn.classList.toggle('is-active', btn.dataset.setLang === lang);
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
