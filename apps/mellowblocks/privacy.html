@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy Policy — Mellow Blocks · Bemo Labs</title>
-    <meta name="description" content="The privacy policy for Mellow Blocks will be published before the app launches." />
+    <meta name="description" content="The privacy policy that governs Mellow Blocks. We're transparent about every third-party service the app uses." />
 
     <link rel="icon" type="image/svg+xml" href="/assets/brand/bemolabs-icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/bemolabs-icon-32.png" />
     <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,34 +36,240 @@
     <main class="container">
         <article class="legal" data-lang="en">
             <h1>Privacy Policy</h1>
-            <p class="updated">Coming before launch</p>
+            <p class="updated">Last updated: 29 May 2026</p>
 
-            <p>Mellow Blocks is in final polish for its iOS and Android release. The full privacy policy will be published here before the app goes live on the App Store and Google Play, and the in-app "Privacy" link will point back to this page.</p>
+            <p>This policy describes how <strong>Mellow Blocks</strong>, made by <strong>Bemo Labs</strong>, handles the data it touches. It covers every Mellow Blocks build that ships through the Apple App Store and the Google Play Store — iPhone, iPad, and Android phones &amp; tablets — and also the bemolabs.com website where this policy lives.</p>
 
-            <p>While the final text is being prepared, the policy will follow the same principles as our other apps:</p>
+            <p>The short version: we don't run our own servers, we don't collect a personal account from you, and the only third parties involved are Apple's own services (on iOS), Google's own services (on Android), AppLovin MAX (for rewarded ads you choose to watch), RevenueCat (only for handling in-app purchases), Firebase Analytics (anonymous gameplay events), and Google Analytics (only on the bemolabs.com website, never inside the app).</p>
+
+            <h2>1. Who we are</h2>
+            <p>Bemo Labs is an independent mobile studio based in Istanbul, Turkey. You can reach us at <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>.</p>
+
+            <h2>2. Data Mellow Blocks stores on your device</h2>
+            <p>Mellow Blocks keeps the following information on the device itself, using Unity's standard PlayerPrefs storage:</p>
             <ul>
-                <li>We don't run our own servers and don't collect a personal account from you.</li>
-                <li>Game data lives on your device, with platform-native cloud sync only when you opt in.</li>
-                <li>Any third-party services used (advertising, leaderboards, analytics) will be disclosed by name and scope, with opt-out paths.</li>
+                <li>Your best score and game statistics (highest score, total blocks placed, total line clears)</li>
+                <li>Daily play streak and daily tournament progress</li>
+                <li>Preference choices (selected theme, language, SFX volume, haptic toggle, gravity mode)</li>
+                <li>Whether you completed onboarding</li>
+                <li>In-app purchase status (Remove Ads — whether you've bought it)</li>
+            </ul>
+            <p>None of this is sent to Bemo Labs. We do not operate a backend that would receive it. Mellow Blocks does not currently sync data across devices.</p>
+
+            <h2>3. Game Center (iOS) and Play Games Services (Android)</h2>
+            <p>When the social features are enabled in a future release, Mellow Blocks will submit the following to <strong>Apple Game Center</strong> (on iOS) and <strong>Google Play Games Services</strong> (on Android):</p>
+            <ul>
+                <li>Best scores for global leaderboards</li>
+                <li>Daily and weekly leaderboard entries</li>
+                <li>Achievement progress (block placement milestones, line clear counts, streak milestones)</li>
+            </ul>
+            <p>Game Center and Play Games Services associate this data with your Game Center / Play Games identity, which is governed by Apple's and Google's privacy policies respectively. We never see your underlying Apple ID or Google account — only the alias you chose.</p>
+
+            <h2>4. Notifications</h2>
+            <p>If you opt in to notifications, Mellow Blocks schedules <strong>local</strong> reminders on your device (streak reminders, daily tournament notifications). These never leave your device. We do not use push notifications, so we don't collect a device token.</p>
+
+            <h2>5. Advertising (AppLovin MAX)</h2>
+            <p>We show <strong>rewarded video ads through AppLovin MAX</strong> when you choose to watch one — for example, to continue a game after Game Over. We also show occasional interstitial ads between games, with frequency controls (no ads on your first 24 hours of play, and no more than one per 2–3 games after that).</p>
+
+            <h3>What AppLovin collects</h3>
+            <p>AppLovin MAX may collect the following while serving an ad:</p>
+            <ul>
+                <li>Your device's advertising identifier (IDFA on iOS, GAID on Android) — only if you grant tracking permission. On iOS, this requires the App Tracking Transparency prompt. On Android, this respects your Limit Ad Tracking setting. If you deny, AppLovin falls back to non-personalized ads.</li>
+                <li>Device model, OS version, app version</li>
+                <li>Coarse location (country / region, derived from IP, never precise)</li>
+                <li>Diagnostic and performance data about ad delivery</li>
+            </ul>
+            <p>This data is governed by <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">AppLovin's Privacy Policy</a>. Bemo Labs only receives aggregate AppLovin reports — we never see your advertising identifier or any AppLovin-collected data tied to your identity.</p>
+
+            <h3>Ad content filtering</h3>
+            <p>We've configured AppLovin to block the following categories regardless of any other setting:</p>
+            <ul>
+                <li>Adult content and dating</li>
+                <li>Gambling, casino, sports betting</li>
+                <li>Alcohol</li>
+                <li>Tobacco, vaping, e-cigarettes</li>
+                <li>Prescription drugs</li>
+                <li>Political ads</li>
+            </ul>
+            <p>Ad content rating is set to "General audiences" (G). If you ever see an ad that violates this, please email <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a> with a screenshot and we'll forward it to AppLovin.</p>
+
+            <h3>EU / GDPR consent</h3>
+            <p>If you're in the European Economic Area, the United Kingdom, or Switzerland, the app shows Google's Consent Management Platform (UMP) before any ad is requested. You can accept personalized ads, accept only non-personalized ads, or refuse advertising-related cookies. Your choice is stored on your device and respected on every ad request.</p>
+
+            <h2>6. In-app purchases (RevenueCat)</h2>
+            <p>Mellow Blocks offers a one-time non-consumable purchase: <strong>Remove Ads</strong> ($3.99). Purchases are handled by <strong>RevenueCat</strong>, which validates receipts with Apple App Store and Google Play Store on our behalf.</p>
+            <p>RevenueCat receives:</p>
+            <ul>
+                <li>A randomly generated, anonymous user ID (we don't collect any account from you)</li>
+                <li>Purchase status (whether you bought Remove Ads, and when)</li>
+                <li>Device platform (iOS / Android) and app version</li>
+            </ul>
+            <p>RevenueCat does not receive your name, email, payment details, or any identifying information beyond the anonymous user ID. Their data handling is governed by <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</p>
+
+            <h2>7. Analytics (Firebase Analytics)</h2>
+            <p>Mellow Blocks uses <strong>Firebase Analytics</strong> to understand how the game is played in aggregate — which features are popular, where players drop off, what themes are picked, and so on. We use this only to make the game better.</p>
+            <p>Firebase Analytics may collect:</p>
+            <ul>
+                <li>App usage events (game start, game end, score achieved, theme switched, language picked, in-app purchase, ad shown)</li>
+                <li>Device model, OS version, app version, language, country (derived from IP)</li>
+                <li>Anonymous instance ID (resets if you reinstall the app)</li>
+            </ul>
+            <p>We never collect personally identifiable information. The data is governed by <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's Privacy Policy</a>. You can opt out of Firebase Analytics by enabling iOS Limit Ad Tracking / Android Opt-out of Personalized Ads in your device settings.</p>
+
+            <h2>8. Website analytics (bemolabs.com only)</h2>
+            <p>The <strong>bemolabs.com</strong> website uses <strong>Google Analytics 4</strong> (Measurement ID <code>G-GF07MJT8CV</code>) to understand which pages get visited and how visitors move through the site. Google Analytics is <em>only</em> loaded on the website — the Mellow Blocks app itself does not contain Google Analytics.</p>
+            <p>Google Analytics drops a few first-party cookies (<code>_ga</code>, <code>_ga_*</code>) that hold a randomized client ID. It collects:</p>
+            <ul>
+                <li>Pages you view on bemolabs.com and how long you stay on each</li>
+                <li>The page that referred you (if any)</li>
+                <li>Country / region, derived from IP — your IP is anonymized before storage</li>
+                <li>Device type, browser, screen size, language</li>
+            </ul>
+            <p>We never see your IP or any data that identifies you personally. Data retention is set to 14 months, after which Google deletes the event-level data. The collection is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+            <p>To opt out site-wide, install Google's <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Analytics Opt-out Browser Add-on</a>, or block the <code>_ga</code> cookie in your browser settings.</p>
+
+            <h2>9. Children</h2>
+            <p>Mellow Blocks is rated for general audiences (4+ on the App Store, Everyone on Google Play). We do not knowingly target children under 13 and do not collect any data from them. If you believe a child has provided personal information, please contact us and we'll delete it.</p>
+
+            <h2>10. Your rights</h2>
+            <p>You can do all of the following at any time:</p>
+            <ul>
+                <li><strong>Stop tracking (iOS)</strong>: iOS Settings → Privacy &amp; Security → Tracking → toggle Mellow Blocks off.</li>
+                <li><strong>Stop tracking (Android)</strong>: Android Settings → Privacy → Ads → Opt out of Ads Personalization.</li>
+                <li><strong>Revise consent</strong>: tap any future "Watch ad" flow to re-trigger the GDPR consent form, or reset the app via your device's app settings.</li>
+                <li><strong>Restore purchases</strong>: Mellow Blocks Settings → Restore Purchases.</li>
+                <li><strong>Opt out of website analytics</strong>: install Google's <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Analytics Opt-out Browser Add-on</a>, or block <code>_ga</code> cookies in your browser.</li>
+                <li><strong>Delete all data</strong>: uninstall Mellow Blocks. Local data is removed by iOS / Android automatically.</li>
+                <li><strong>Make a privacy request</strong>: email <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>. We respond within 30 days.</li>
             </ul>
 
-            <p>Questions in the meantime: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>.</p>
+            <h2>11. Security</h2>
+            <p>We don't operate a backend, so there's no Bemo Labs database that could be breached. Data on your device is protected by iOS / Android sandboxing and disk encryption. Data sent to AppLovin, RevenueCat, and Firebase is protected by their standard at-rest encryption and TLS in transit.</p>
+
+            <h2>12. Changes to this policy</h2>
+            <p>If we materially change anything (e.g. add a new ad network, add a new third-party service), we'll update the "Last updated" date above and surface the change inside the app on next launch. Continued use of Mellow Blocks after a material change means you accept the revised policy.</p>
+
+            <h2>13. Contact</h2>
+            <p>Questions, requests, or just hello: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a></p>
         </article>
 
         <article class="legal" data-lang="tr">
             <h1>Gizlilik Politikası</h1>
-            <p class="updated">Yayın öncesinde eklenecek</p>
+            <p class="updated">Son güncelleme: 29 Mayıs 2026</p>
 
-            <p>Mellow Blocks, iOS ve Android yayını için son rötuş aşamasında. Tam gizlilik politikası, uygulama App Store ve Google Play'de yayına girmeden önce burada yayımlanacak ve uygulama içindeki "Gizlilik" bağlantısı bu sayfaya yönlendirilecek.</p>
+            <p>Bu politika, <strong>Bemo Labs</strong> tarafından geliştirilen <strong>Mellow Blocks</strong>'un dokunduğu verileri nasıl ele aldığını anlatır. Apple App Store ve Google Play Store üzerinden dağıtılan tüm Mellow Blocks sürümlerini — iPhone, iPad ve Android telefon &amp; tabletler — ve politikanın yayımlandığı bemolabs.com web sitesini kapsar.</p>
 
-            <p>Nihai metin hazırlanırken politika diğer uygulamalarımızla aynı ilkeleri takip edecek:</p>
+            <p>Kısa özet: Kendi sunucularımızı çalıştırmıyoruz, senden kişisel bir hesap istemiyoruz, ve işin içinde olan tek üçüncü taraflar Apple'ın kendi servisleri (iOS'ta), Google'ın kendi servisleri (Android'de), AppLovin MAX (izlemeyi seçtiğin ödüllü reklamlar için), RevenueCat (yalnızca uygulama içi satın alımlar için), Firebase Analytics (anonim oyun olayları) ve Google Analytics (yalnızca bemolabs.com web sitesinde, uygulamada asla).</p>
+
+            <h2>1. Biz kimiz</h2>
+            <p>Bemo Labs, İstanbul merkezli bağımsız bir mobil uygulama stüdyosudur. Bize <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a> üzerinden ulaşabilirsin.</p>
+
+            <h2>2. Mellow Blocks'un cihazında sakladığı veriler</h2>
+            <p>Mellow Blocks aşağıdaki bilgileri Unity'nin standart PlayerPrefs depolama API'si ile cihazın üzerinde tutar:</p>
             <ul>
-                <li>Kendi sunucularımızı çalıştırmıyoruz ve senden kişisel bir hesap istemiyoruz.</li>
-                <li>Oyun verisi cihazında durur; platforma özel bulut senkronizasyonu yalnızca açıkça izin verdiğinde devreye girer.</li>
-                <li>Kullanılan tüm üçüncü taraf servisleri (reklam, sıralamalar, analitik) ad ve kapsamla birlikte vazgeçme yöntemleri ile açıklanacak.</li>
+                <li>En iyi skorun ve oyun istatistiklerin (en yüksek skor, toplam yerleştirilen blok, toplam temizlenen satır)</li>
+                <li>Günlük oyun serisi ve günlük turnuva ilerlemesi</li>
+                <li>Tercih seçimleri (seçili tema, dil, SFX sesi, titreşim, yerçekimi modu)</li>
+                <li>Onboarding'in tamamlanıp tamamlanmadığı</li>
+                <li>Uygulama içi satın alım durumu (Reklamları Kaldır — satın alıp almadığın)</li>
+            </ul>
+            <p>Bunların hiçbiri Bemo Labs'a gönderilmez. Veriyi alacak bir backend işletmiyoruz. Mellow Blocks şu an cihazlar arası veri senkronizasyonu yapmaz.</p>
+
+            <h2>3. Game Center (iOS) ve Play Games Services (Android)</h2>
+            <p>Sosyal özellikler gelecekteki bir sürümde aktif olduğunda, Mellow Blocks aşağıdaki verileri <strong>Apple Game Center</strong>'a (iOS'ta) ve <strong>Google Play Games Services</strong>'e (Android'de) gönderecek:</p>
+            <ul>
+                <li>Global liderlik tabloları için en iyi skorlar</li>
+                <li>Günlük ve haftalık liderlik tablosu girişleri</li>
+                <li>Başarım ilerlemesi (blok yerleştirme kilometre taşları, satır temizleme sayısı, seri kilometre taşları)</li>
+            </ul>
+            <p>Game Center ve Play Games Services bu veriyi seçtiğin Game Center / Play Games kimliğine bağlar; bu süreci Apple'ın ve Google'ın gizlilik politikaları yönetir. Apple ID veya Google hesabını hiçbir zaman görmeyiz — sadece seçtiğin takma adı.</p>
+
+            <h2>4. Bildirimler</h2>
+            <p>Bildirimlere izin verirsen Mellow Blocks cihazında <strong>yerel</strong> hatırlatmalar planlar (seri hatırlatıcısı, günlük turnuva bildirimleri). Bunlar cihazından hiç çıkmaz. Push bildirim kullanmıyoruz, dolayısıyla cihaz token'ı toplamıyoruz.</p>
+
+            <h2>5. Reklamlar (AppLovin MAX)</h2>
+            <p>Senin izlemeyi seçtiğin <strong>AppLovin MAX ödüllü video reklamlar</strong> gösteriyoruz — örneğin Oyun Bitti sonrası oyuna devam etmek için. Ayrıca oyunlar arasında ara sıra interstitial (geçiş) reklam gösteriyoruz; frekans kontrollü (ilk 24 saatte hiç reklam yok, sonrasında her 2–3 oyunda en fazla bir).</p>
+
+            <h3>AppLovin'in topladığı veriler</h3>
+            <p>AppLovin MAX bir reklam sunarken şunları toplayabilir:</p>
+            <ul>
+                <li>Cihazının reklam tanımlayıcısı (iOS'ta IDFA, Android'de GAID) — yalnızca izin verirsen. iOS'ta bu Apple'ın App Tracking Transparency penceresini gerektirir. Android'de Limit Ad Tracking ayarına saygı duyar. Reddedersen AppLovin kişiselleştirilmemiş reklama döner.</li>
+                <li>Cihaz modeli, işletim sistemi sürümü, uygulama sürümü</li>
+                <li>Kaba konum (ülke / bölge — IP'den türetilir, asla hassas değil)</li>
+                <li>Reklam dağıtımı hakkında tanılama ve performans verileri</li>
+            </ul>
+            <p>Bu veriler <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">AppLovin'in Gizlilik Politikası</a> kapsamındadır. Bemo Labs yalnızca AppLovin'in toplu raporlarını alır — reklam tanımlayıcını veya kimliğine bağlı AppLovin verilerini asla görmeyiz.</p>
+
+            <h3>Reklam içerik filtreleme</h3>
+            <p>AppLovin'i şu kategorileri her durumda engelleyecek şekilde ayarladık:</p>
+            <ul>
+                <li>Yetişkin içerik ve flört</li>
+                <li>Kumar, casino, spor bahisleri</li>
+                <li>Alkol</li>
+                <li>Tütün, vaping, elektronik sigara</li>
+                <li>Reçeteli ilaçlar</li>
+                <li>Politik reklamlar</li>
+            </ul>
+            <p>Reklam içerik derecelendirmesi "Genel kitle" (G) olarak ayarlandı. Bu listeyi ihlal eden bir reklam görürsen lütfen ekran görüntüsüyle birlikte <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a> adresine yaz; AppLovin'e ileteceğiz.</p>
+
+            <h3>AB / GDPR onayı</h3>
+            <p>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'deysen, herhangi bir reklam istenmeden önce uygulama Google'ın Onay Yönetim Platformu'nu (UMP) gösterir. Kişiselleştirilmiş reklamları kabul edebilir, yalnızca kişiselleştirilmemiş reklamları kabul edebilir veya reklamla ilgili çerezleri reddedebilirsin. Tercihin cihazında saklanır ve her reklam isteğinde dikkate alınır.</p>
+
+            <h2>6. Uygulama içi satın alımlar (RevenueCat)</h2>
+            <p>Mellow Blocks tek seferlik bir non-consumable satın alım sunar: <strong>Reklamları Kaldır</strong> ($3.99). Satın alımlar <strong>RevenueCat</strong> tarafından yönetilir; bizim adımıza Apple App Store ve Google Play Store ile makbuzları doğrular.</p>
+            <p>RevenueCat şunları alır:</p>
+            <ul>
+                <li>Rastgele oluşturulmuş, anonim bir kullanıcı ID'si (senden hiçbir hesap toplamıyoruz)</li>
+                <li>Satın alım durumu (Reklamları Kaldır'ı satın aldın mı ve ne zaman)</li>
+                <li>Cihaz platformu (iOS / Android) ve uygulama sürümü</li>
+            </ul>
+            <p>RevenueCat senin adını, e-posta adresini, ödeme bilgilerini veya anonim kullanıcı ID'sinin ötesinde herhangi bir tanımlayıcı bilgiyi almaz. Veri işleme süreci <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat'in Gizlilik Politikası</a> kapsamındadır.</p>
+
+            <h2>7. Analitik (Firebase Analytics)</h2>
+            <p>Mellow Blocks oyunun toplu olarak nasıl oynandığını anlamak için <strong>Firebase Analytics</strong> kullanır — hangi özellikler popüler, oyuncular nerede ayrılıyor, hangi temalar seçiliyor gibi. Bu veriyi yalnızca oyunu daha iyi hale getirmek için kullanırız.</p>
+            <p>Firebase Analytics şunları toplayabilir:</p>
+            <ul>
+                <li>Uygulama kullanım olayları (oyun başlangıcı, oyun bitişi, elde edilen skor, tema değişimi, dil seçimi, uygulama içi satın alım, gösterilen reklam)</li>
+                <li>Cihaz modeli, işletim sistemi sürümü, uygulama sürümü, dil, ülke (IP'den türetilir)</li>
+                <li>Anonim örnek ID (uygulamayı yeniden yüklersen sıfırlanır)</li>
+            </ul>
+            <p>Kişisel olarak tanımlanabilir bilgi toplamıyoruz. Veriler <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase'in Gizlilik Politikası</a> kapsamındadır. iOS Limit Ad Tracking / Android Reklam Kişiselleştirmesini Devre Dışı Bırak ayarlarını cihaz ayarlarından açarak Firebase Analytics'ten çıkış yapabilirsin.</p>
+
+            <h2>8. Web sitesi analitiği (yalnızca bemolabs.com)</h2>
+            <p><strong>bemolabs.com</strong> web sitesi hangi sayfaların ziyaret edildiğini ve ziyaretçilerin sitede nasıl gezindiğini anlamak için <strong>Google Analytics 4</strong> (Ölçüm Kimliği <code>G-GF07MJT8CV</code>) kullanır. Google Analytics <em>yalnızca</em> web sitesinde yüklenir — Mellow Blocks uygulaması Google Analytics içermez.</p>
+            <p>Google Analytics rastgele bir istemci kimliği tutan birkaç birinci taraf çerez bırakır (<code>_ga</code>, <code>_ga_*</code>). Şunları toplar:</p>
+            <ul>
+                <li>bemolabs.com'da görüntülediğin sayfalar ve her birinde ne kadar kaldığın</li>
+                <li>Seni yönlendiren sayfa (varsa)</li>
+                <li>Ülke / bölge — IP'den türetilir; IP'n saklanmadan önce anonimleştirilir</li>
+                <li>Cihaz türü, tarayıcı, ekran boyutu, dil</li>
+            </ul>
+            <p>IP'ni veya seni kişisel olarak tanımlayan herhangi bir veriyi asla görmeyiz. Veri saklama 14 ay olarak ayarlandı; sonra Google olay düzeyindeki veriyi siler. Toplama <a href="https://policies.google.com/privacy?hl=tr" target="_blank" rel="noopener">Google'ın Gizlilik Politikası</a> kapsamındadır.</p>
+            <p>Site genelinde çıkış yapmak için Google'ın <a href="https://tools.google.com/dlpage/gaoptout?hl=tr" target="_blank" rel="noopener">Analytics Çıkış Tarayıcı Eklentisi</a>'ni yükle veya tarayıcı ayarlarında <code>_ga</code> çerezini engelle.</p>
+
+            <h2>9. Çocuklar</h2>
+            <p>Mellow Blocks genel kitleler için derecelendirildi (App Store'da 4+, Google Play'de Herkes). 13 yaşın altındaki çocukları bilerek hedeflemeyiz ve onlardan veri toplamayız. Bir çocuğun kişisel bilgi sağladığını düşünüyorsan lütfen bize ulaş; sileceğiz.</p>
+
+            <h2>10. Haklarınız</h2>
+            <p>Aşağıdakilerin tümünü istediğin zaman yapabilirsin:</p>
+            <ul>
+                <li><strong>İzlemeyi durdur (iOS)</strong>: iOS Ayarlar → Gizlilik &amp; Güvenlik → İzleme → Mellow Blocks'u kapat.</li>
+                <li><strong>İzlemeyi durdur (Android)</strong>: Android Ayarlar → Gizlilik → Reklamlar → Reklam Kişiselleştirmesinden Çık.</li>
+                <li><strong>Onayı değiştir</strong>: gelecekteki bir "Reklam İzle" akışına dokunarak GDPR onay formunu yeniden tetikle veya cihazının uygulama ayarlarından uygulamayı sıfırla.</li>
+                <li><strong>Satın alımları geri yükle</strong>: Mellow Blocks Ayarlar → Satın Alımları Geri Yükle.</li>
+                <li><strong>Web sitesi analitiğinden çık</strong>: Google'ın <a href="https://tools.google.com/dlpage/gaoptout?hl=tr" target="_blank" rel="noopener">Analytics Çıkış Tarayıcı Eklentisi</a>'ni yükle veya tarayıcıda <code>_ga</code> çerezlerini engelle.</li>
+                <li><strong>Tüm veriyi sil</strong>: Mellow Blocks'u kaldır. Yerel veri iOS / Android tarafından otomatik silinir.</li>
+                <li><strong>Gizlilik talebinde bulun</strong>: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>'a e-posta gönder. 30 gün içinde yanıt veririz.</li>
             </ul>
 
-            <p>Bu süreçte sorular için: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>.</p>
+            <h2>11. Güvenlik</h2>
+            <p>Bir backend işletmiyoruz, dolayısıyla ihlal edilebilecek bir Bemo Labs veritabanı yok. Cihazındaki veriler iOS / Android sandboxing ve disk şifreleme tarafından korunur. AppLovin, RevenueCat ve Firebase'e gönderilen veriler kendi standart at-rest şifreleme ve TLS-in-transit'leri tarafından korunur.</p>
+
+            <h2>12. Bu politikanın değişiklikleri</h2>
+            <p>Önemli bir değişiklik yaparsak (örneğin yeni bir reklam ağı veya yeni bir üçüncü taraf servis eklersek), yukarıdaki "Son güncelleme" tarihini güncelleyeceğiz ve değişikliği bir sonraki açılışta uygulamanın içinde göstereceğiz. Önemli bir değişiklikten sonra Mellow Blocks'u kullanmaya devam etmen revize politikayı kabul ettiğin anlamına gelir.</p>
+
+            <h2>13. İletişim</h2>
+            <p>Sorular, talepler veya sadece selam vermek için: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a></p>
         </article>
     </main>
 
