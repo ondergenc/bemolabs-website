@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — Mellow Blocks · Bemo Labs</title>
+    <meta name="description" content="Get in touch about Mellow Blocks — questions, early feedback, bug reports." />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/bemolabs-icon.svg" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF07MJT8CV"></script>
+    <script src="/assets/js/analytics.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="site-header__brand" href="/" aria-label="Bemo Labs">
+                <img class="site-header__brand--light" src="/assets/brand/bemolabs-lockup-horizontal.svg" alt="Bemo Labs" />
+                <img class="site-header__brand--dark" src="/assets/brand/bemolabs-lockup-horizontal-dark.svg" alt="Bemo Labs" />
+            </a>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="legal" data-lang="en">
+            <h1>Support</h1>
+            <p class="updated">For Mellow Blocks — iOS &amp; Android</p>
+
+            <p>Mellow Blocks is in final polish for launch. The fastest way to reach us — for early feedback, questions, or bug reports — is <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>. We read every message and reply within two business days, usually sooner.</p>
+
+            <h2>What to include in a bug report</h2>
+            <ul>
+                <li>Device model + OS version (iOS or Android)</li>
+                <li>App version (visible in the app's Settings screen)</li>
+                <li>What you were doing when it happened</li>
+                <li>A screenshot or screen recording if you can</li>
+            </ul>
+
+            <h2>Privacy &amp; policies</h2>
+            <p>The Mellow Blocks <a href="/apps/mellowblocks/privacy.html">Privacy Policy</a> will be published before launch.</p>
+        </article>
+
+        <article class="legal" data-lang="tr">
+            <h1>Destek</h1>
+            <p class="updated">Mellow Blocks için — iOS ve Android</p>
+
+            <p>Mellow Blocks yayın için son rötuş aşamasında. Erken geri bildirim, soru veya hata bildirimleri için bize ulaşmanın en hızlı yolu: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>. Her mesajı okuyoruz, genelde aynı gün, en geç iki iş günü içinde yanıt veriyoruz.</p>
+
+            <h2>Hata bildiriminde neler olmalı</h2>
+            <ul>
+                <li>Cihaz modeli + işletim sistemi sürümü (iOS ya da Android)</li>
+                <li>Uygulama sürümü (uygulamanın Ayarlar ekranında görünür)</li>
+                <li>Hata olduğunda ne yapıyordun</li>
+                <li>Mümkünse ekran görüntüsü veya ekran kaydı</li>
+            </ul>
+
+            <h2>Gizlilik ve politikalar</h2>
+            <p>Mellow Blocks <a href="/apps/mellowblocks/privacy.html?lang=tr">Gizlilik Politikası</a> yayın öncesinde eklenecek.</p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__wordmark">
+                <img src="/assets/brand/bemolabs-wordmark.svg" alt="Bemo Labs" />
+            </div>
+            <nav class="site-footer__links">
+                <a href="/">Bemo Labs</a>
+                <a href="/apps/mellowblocks/">Mellow Blocks</a>
+                <a href="/apps/mellowblocks/privacy.html" data-lang="en">Privacy</a>
+                <a href="/apps/mellowblocks/privacy.html?lang=tr" data-lang="tr">Gizlilik</a>
+                <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>
+            </nav>
+            <p style="margin:0; font-family:'JetBrains Mono',monospace; font-size:11px;">© Bemo Labs</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/lang.js"></script>
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang');
+            if (lang === 'tr' || lang === 'en') {
+                localStorage.setItem('bemolabs.lang', lang);
+                document.documentElement.lang = lang;
+                document.querySelectorAll('.lang-switch button').forEach((btn) => {
+                    btn.classList.toggle('is-active', btn.dataset.setLang === lang);
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

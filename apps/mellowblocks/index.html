@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mellow Blocks — Bemo Labs</title>
+    <meta name="description" content="Mellow Blocks is a calm take on the block puzzle — a quieter, more thoughtful version of the genre. Coming to iOS and Android." />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/bemolabs-icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/bemolabs-icon-32.png" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF07MJT8CV"></script>
+    <script src="/assets/js/analytics.js"></script>
+
+    <meta property="og:title" content="Mellow Blocks" />
+    <meta property="og:description" content="Blocks that fit, calmly." />
+    <meta property="og:image" content="/apps/mellowblocks/assets/icon-1024.png" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="https://bemolabs.com/apps/mellowblocks/" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="site-header__brand" href="/" aria-label="Bemo Labs">
+                <img class="site-header__brand--light" src="/assets/brand/bemolabs-lockup-horizontal.svg" alt="Bemo Labs" />
+                <img class="site-header__brand--dark" src="/assets/brand/bemolabs-lockup-horizontal-dark.svg" alt="Bemo Labs" />
+            </a>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="product-hero">
+                <div class="product-hero__art">
+                    <img src="/apps/mellowblocks/assets/icon-1024.png" alt="Mellow Blocks app icon" />
+                </div>
+                <div class="product-hero__copy">
+                    <p class="eyebrow" data-lang="en">A Bemo Labs app</p>
+                    <p class="eyebrow" data-lang="tr">Bir Bemo Labs uygulaması</p>
+
+                    <h1 data-lang="en">Blocks that fit, calmly.</h1>
+                    <h1 data-lang="tr">Sakinlikle yerleşen bloklar.</h1>
+
+                    <p data-lang="en">Mellow Blocks is a quieter take on the block puzzle. We're polishing the final details now — it'll land on iOS and Android in the coming weeks.</p>
+                    <p data-lang="tr">Mellow Blocks, blok bulmacalarına daha sakin bir yaklaşım. Şu an son detayları rötuşluyoruz — önümüzdeki haftalarda iOS ve Android'de.</p>
+
+                    <div class="cta-row">
+                        <span class="btn btn--disabled" data-lang="en">Coming to the App Store</span>
+                        <span class="btn btn--disabled" data-lang="tr">Yakında App Store'da</span>
+                        <span class="btn btn--disabled" data-lang="en">Coming to Google Play</span>
+                        <span class="btn btn--disabled" data-lang="tr">Yakında Google Play'de</span>
+                    </div>
+
+                    <p style="margin-top:24px; font-size:13px;" data-lang="en">We'll drop QR codes here when Mellow Blocks goes live on each store.</p>
+                    <p style="margin-top:24px; font-size:13px;" data-lang="tr">Mellow Blocks her mağazada yayına girdiğinde buraya QR kodları yerleştireceğiz.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <h2 data-lang="en">Legal &amp; support</h2>
+            <h2 data-lang="tr">Yasal ve destek</h2>
+
+            <div class="cta-row">
+                <a class="btn btn--secondary" href="/apps/mellowblocks/privacy.html" data-lang="en">Privacy Policy</a>
+                <a class="btn btn--secondary" href="/apps/mellowblocks/privacy.html?lang=tr" data-lang="tr">Gizlilik Politikası</a>
+                <a class="btn btn--secondary" href="/apps/mellowblocks/support.html" data-lang="en">Support</a>
+                <a class="btn btn--secondary" href="/apps/mellowblocks/support.html?lang=tr" data-lang="tr">Destek</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__wordmark">
+                <img src="/assets/brand/bemolabs-wordmark.svg" alt="Bemo Labs" />
+            </div>
+            <nav class="site-footer__links">
+                <a href="/">Bemo Labs</a>
+                <a href="/apps/mellowblocks/privacy.html" data-lang="en">Privacy</a>
+                <a href="/apps/mellowblocks/privacy.html?lang=tr" data-lang="tr">Gizlilik</a>
+                <a href="/apps/mellowblocks/support.html" data-lang="en">Support</a>
+                <a href="/apps/mellowblocks/support.html?lang=tr" data-lang="tr">Destek</a>
+                <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>
+            </nav>
+            <p style="margin:0; font-family:'JetBrains Mono',monospace; font-size:11px;">© Bemo Labs</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/lang.js"></script>
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang');
+            if (lang === 'tr' || lang === 'en') {
+                localStorage.setItem('bemolabs.lang', lang);
+                document.documentElement.lang = lang;
+                document.querySelectorAll('.lang-switch button').forEach((btn) => {
+                    btn.classList.toggle('is-active', btn.dataset.setLang === lang);
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
