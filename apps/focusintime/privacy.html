@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Focus in Time · Bemo Labs</title>
+    <meta name="description" content="The privacy policy that governs Focus in Time. No analytics, no ads, no third-party SDKs — everything stays on your device and in your own iCloud." />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/bemolabs-icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/bemolabs-icon-32.png" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF07MJT8CV"></script>
+    <script src="/assets/js/analytics.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="site-header__brand" href="/" aria-label="Bemo Labs">
+                <img class="site-header__brand--light" src="/assets/brand/bemolabs-lockup-horizontal.svg" alt="Bemo Labs" />
+                <img class="site-header__brand--dark" src="/assets/brand/bemolabs-lockup-horizontal-dark.svg" alt="Bemo Labs" />
+            </a>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="legal" data-lang="en">
+            <h1>Privacy Policy</h1>
+            <p class="updated">Last updated: 5 June 2026</p>
+
+            <p>This policy describes how <strong>Focus in Time</strong>, made by <strong>Bemo Labs</strong>, handles the data it touches. It covers every Focus in Time build that ships through the Apple App Store — iPhone, iPad, Mac and Apple Watch — and also the bemolabs.com website where this policy lives.</p>
+
+            <p>The short version: Focus in Time is a focus-timer app. We don't run our own servers, we don't collect a personal account from you, and we don't embed analytics, ads or third-party SDKs in the app. Everything you do stays on your device and — if you opt in by signing in to iCloud — syncs between your own Apple devices through Apple's CloudKit. No human at Bemo Labs ever sees your timer history.</p>
+
+            <h2>1. Who we are</h2>
+            <p>Bemo Labs is an independent mobile studio based in Istanbul, Turkey. You can reach us at <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>.</p>
+
+            <h2>2. Data Focus in Time stores on your device</h2>
+            <p>Focus in Time keeps the following information on the device itself, using Apple's standard storage APIs (sandboxed app storage and an App Group container):</p>
+            <ul>
+                <li>Your <strong>categories</strong> (name, colour, icon, focus/break/cycle durations)</li>
+                <li>Your <strong>scheduled plans</strong> (weekday + start time + category + optional block duration)</li>
+                <li><strong>Completed focus sessions</strong> (timestamp, duration, the category they belonged to)</li>
+                <li><strong>Daily/monthly goal targets</strong> you set in Goals</li>
+                <li>App <strong>preferences</strong>: timer settings, plan-reminder toggle, in-app language choice</li>
+                <li>The <strong>current timer state</strong> (which phase, when it ends, whether it's paused) — so the timer can keep running accurately across launches, background-foreground transitions and watchOS extended-runtime sessions</li>
+                <li>The <strong>last 12 months of stats</strong> derived from the data above, used to draw charts in Statistics</li>
+            </ul>
+            <p>This data never leaves the device unless you have iCloud sync enabled (see next section).</p>
+
+            <h2>3. iCloud sync (Apple's CloudKit)</h2>
+            <p>If you're signed in to iCloud on your Apple devices, Focus in Time syncs the data listed above through <strong>Apple's CloudKit</strong>, into your <strong>private iCloud database</strong> (container ID <code>iCloud.com.bemolabs.BemoPomodoro</code>). This means:</p>
+            <ul>
+                <li>The data is stored in your own iCloud account, not on a Bemo Labs server.</li>
+                <li>Only your devices that are signed in to the same iCloud account can read it.</li>
+                <li>Bemo Labs cannot read it. We don't operate a backend, we don't have access to your private CloudKit data, and we don't receive copies of it.</li>
+                <li>Sync is push-driven by Apple — when you finish a session on your iPhone, the change appears on your iPad, Mac and Apple Watch within seconds.</li>
+            </ul>
+            <p>If you don't want to sync, sign out of iCloud (or turn off iCloud Drive / iCloud for Focus in Time in <strong>Settings → [Your Name] → iCloud</strong>). The app will keep working locally on each device.</p>
+            <p>We also use Apple's iCloud Key-Value Store (a small key-value bucket within your iCloud) as a fallback channel for the same data. Same privacy rules apply: it's in your own iCloud, not on our servers.</p>
+
+            <h2>4. Apple Watch sync</h2>
+            <p>When you have the Apple Watch app installed, the iPhone and Watch exchange timer state and settings directly over Apple's WatchConnectivity framework. This is a device-to-device link mediated by Apple's frameworks — no Bemo Labs server is involved.</p>
+
+            <h2>5. Notifications</h2>
+            <p>If you opt in to notifications, Focus in Time schedules <strong>local</strong> reminders on your device for plans you've enabled (Settings → Plan Reminders). These are local notifications scheduled by your device's own UNUserNotificationCenter. We do not send push notifications from a server — we don't have a server.</p>
+            <p>You can revoke notification permission at any time in <strong>Settings → Notifications → Focus in Time</strong>.</p>
+
+            <h2>6. PDF reports you export</h2>
+            <p>When you export a statistics report as a PDF, the file is rendered on your device and written to a location you pick (on iPhone/iPad via the share sheet, on Mac via the Save panel). Nothing is uploaded.</p>
+
+            <h2>7. No analytics, no ads, no third-party SDKs in the app</h2>
+            <p>Focus in Time does not bundle any analytics, advertising, attribution, crash-reporting, or other third-party SDK. There are no trackers in the app binary. The only network capability the app declares is the one Apple's CloudKit framework needs to talk to iCloud on your behalf.</p>
+
+            <h2>8. Website analytics (bemolabs.com only)</h2>
+            <p>The <strong>bemolabs.com</strong> website uses <strong>Google Analytics 4</strong> (Measurement ID <code>G-GF07MJT8CV</code>) to understand which pages get visited and how visitors move through the site. Google Analytics is <em>only</em> loaded on the website — the Focus in Time app itself does not contain Google Analytics.</p>
+            <p>Google Analytics drops a few first-party cookies (<code>_ga</code>, <code>_ga_*</code>) that hold a randomized client ID. It collects:</p>
+            <ul>
+                <li>Pages you view on bemolabs.com and how long you stay on each</li>
+                <li>The page that referred you (if any)</li>
+                <li>Country / region, derived from IP — your IP is anonymized before storage</li>
+                <li>Device type, browser, screen size, language</li>
+            </ul>
+            <p>We never see your IP or any data that identifies you personally. Data retention is set to 14 months, after which Google deletes the event-level data. The collection is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+            <p>To opt out site-wide, install Google's <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Analytics Opt-out Browser Add-on</a>, or block the <code>_ga</code> cookie in your browser settings.</p>
+
+            <h2>9. Children</h2>
+            <p>Focus in Time is rated 4+ on the App Store. It does not contain advertising, in-app purchases, location tracking, microphone or camera access, or links to user-generated content. It does not knowingly collect personal information from anyone, including children.</p>
+
+            <h2>10. Your rights</h2>
+            <p>You can do all of the following at any time:</p>
+            <ul>
+                <li><strong>Delete the data on a device</strong> by deleting the app.</li>
+                <li><strong>Delete the iCloud copy</strong> by deleting the data from iCloud in <strong>Settings → [Your Name] → iCloud → Manage Account Storage → Focus in Time</strong>, or by removing the <code>iCloud.com.bemolabs.BemoPomodoro</code> container.</li>
+                <li><strong>Turn off syncing</strong> by signing out of iCloud or disabling iCloud for Focus in Time.</li>
+                <li><strong>Revoke notification permission</strong> in iOS / watchOS Settings.</li>
+                <li><strong>Ask us anything</strong> by emailing <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>.</li>
+            </ul>
+            <p>Because Bemo Labs never holds a copy of your data, there's nothing on our side to retrieve, correct or delete on your behalf — the controls above are the complete set.</p>
+
+            <h2>11. Security</h2>
+            <p>We don't operate a backend, so there's no Bemo Labs database that could be breached. Data on your device is protected by iOS / iPadOS / macOS / watchOS sandboxing. Data in iCloud is protected by Apple's standard CloudKit encryption (in transit and at rest), and you can read about Apple's iCloud security model at <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</p>
+
+            <h2>12. Changes to this policy</h2>
+            <p>If we materially change anything, we'll update the "Last updated" date above and, where appropriate, mention it in the app's release notes.</p>
+
+            <h2>13. Contact</h2>
+            <p>Questions, requests, or just hello: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>.</p>
+        </article>
+
+        <article class="legal" data-lang="tr">
+            <h1>Gizlilik Politikası</h1>
+            <p class="updated">Son güncelleme: 5 Haziran 2026</p>
+
+            <p>Bu politika, <strong>Bemo Labs</strong> tarafından geliştirilen <strong>Focus in Time</strong>'ın dokunduğu verileri nasıl ele aldığını anlatır. Apple App Store üzerinden dağıtılan tüm Focus in Time sürümlerini — iPhone, iPad, Mac ve Apple Watch — ve politikanın yayımlandığı bemolabs.com web sitesini kapsar.</p>
+
+            <p>Kısa özet: Focus in Time, bir odak zamanlayıcı uygulamasıdır. Kendi sunucularımızı işletmiyoruz, senden kişisel bir hesap istemiyoruz; uygulamanın içinde analitik, reklam veya üçüncü taraf SDK bulunmuyor. Yaptığın her şey cihazında kalır ve — iCloud'a giriş yaparak izin verirsen — kendi Apple cihazların arasında Apple'ın CloudKit servisi üzerinden senkronize olur. Bemo Labs'taki hiçbir kişi zamanlayıcı geçmişini göremez.</p>
+
+            <h2>1. Biz kimiz</h2>
+            <p>Bemo Labs, İstanbul merkezli bağımsız bir mobil uygulama stüdyosudur. Bize <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a> adresinden ulaşabilirsin.</p>
+
+            <h2>2. Focus in Time'ın cihazında sakladığı veriler</h2>
+            <p>Focus in Time aşağıdaki bilgileri Apple'ın standart depolama API'leri ile (sandbox uygulama depolaması ve bir App Group konteyneri içinde) cihazın üzerinde tutar:</p>
+            <ul>
+                <li><strong>Kategorilerin</strong> (ad, renk, simge, odak/mola/döngü süreleri)</li>
+                <li><strong>Planladığın oturumlar</strong> (gün + başlangıç saati + kategori + isteğe bağlı blok süresi)</li>
+                <li><strong>Tamamlanan odak oturumları</strong> (zaman damgası, süre, ait olduğu kategori)</li>
+                <li>Hedefler ekranında belirlediğin <strong>günlük/aylık hedefler</strong></li>
+                <li>Uygulama <strong>tercihleri</strong>: zamanlayıcı ayarları, plan hatırlatma düğmesi, uygulama içi dil seçimi</li>
+                <li>Geçerli <strong>zamanlayıcı durumu</strong> (hangi faz, ne zaman bitiyor, duraklatılmış mı) — zamanlayıcının uygulama açılıp kapansa da, arka plana alınsa da, watchOS'ta extended-runtime oturumlarında da doğru çalışabilmesi için</li>
+                <li>Yukarıdaki veriden türetilen <strong>son 12 ayın istatistikleri</strong>; İstatistikler ekranındaki grafikleri çizmek için kullanılır</li>
+            </ul>
+            <p>Bu veri, iCloud senkronizasyonu etkin değilse cihazı asla terk etmez (sonraki bölüme bakın).</p>
+
+            <h2>3. iCloud senkronizasyonu (Apple CloudKit)</h2>
+            <p>Apple cihazlarında iCloud'a giriş yaptıysan, Focus in Time yukarıdaki verileri <strong>Apple CloudKit</strong> üzerinden senkronize eder ve <strong>özel iCloud veritabanında</strong> (container ID <code>iCloud.com.bemolabs.BemoPomodoro</code>) saklar. Bunun anlamı:</p>
+            <ul>
+                <li>Veri, bir Bemo Labs sunucusunda değil, kendi iCloud hesabında saklanır.</li>
+                <li>Yalnızca aynı iCloud hesabına giriş yapmış cihazların okuyabilir.</li>
+                <li>Bemo Labs okuyamaz. Backend işletmiyoruz, özel CloudKit verine erişimimiz yok ve kopyasını almıyoruz.</li>
+                <li>Senkronizasyon Apple tarafından push tabanlıdır — iPhone'unda bir oturum bitirdiğinde değişiklik saniyeler içinde iPad, Mac ve Apple Watch'ta görünür.</li>
+            </ul>
+            <p>Senkronize etmek istemiyorsan iCloud'dan çıkış yap (veya <strong>Ayarlar → [Adın] → iCloud</strong> kısmından iCloud Drive / Focus in Time için iCloud'u kapat). Uygulama her cihazda yerel olarak çalışmaya devam eder.</p>
+            <p>Aynı veri için yedek kanal olarak Apple'ın iCloud Key-Value Store servisini de kullanıyoruz (kendi iCloud'unun içinde küçük bir anahtar-değer kovası). Aynı gizlilik kuralları geçerlidir: bizim sunucumuzda değil, senin iCloud hesabında durur.</p>
+
+            <h2>4. Apple Watch senkronizasyonu</h2>
+            <p>Apple Watch uygulaması kuruluysa, iPhone ile Watch zamanlayıcı durumu ve ayarları doğrudan Apple'ın WatchConnectivity çatısı üzerinden değiştirir. Bu, Apple çatıları aracılığıyla yapılan cihazdan cihaza bir bağlantıdır — bir Bemo Labs sunucusu devrede değildir.</p>
+
+            <h2>5. Bildirimler</h2>
+            <p>Bildirimlere izin verirsen Focus in Time, etkinleştirdiğin planlar için (Ayarlar → Plan Hatırlatıcıları) cihazında <strong>yerel</strong> hatırlatmalar planlar. Bunlar cihazının kendi UNUserNotificationCenter'ı tarafından planlanan yerel bildirimlerdir. Sunucudan push bildirimi göndermiyoruz — sunucumuz yok.</p>
+            <p>Bildirim iznini istediğin zaman <strong>Ayarlar → Bildirimler → Focus in Time</strong> yolundan iptal edebilirsin.</p>
+
+            <h2>6. Dışa aktardığın PDF raporlar</h2>
+            <p>İstatistik raporunu PDF olarak dışa aktardığında, dosya cihazında oluşturulur ve seçtiğin konuma yazılır (iPhone/iPad'de paylaşım sayfası üzerinden, Mac'te Kaydet panelinden). Hiçbir şey yüklenmez.</p>
+
+            <h2>7. Uygulamada analitik yok, reklam yok, üçüncü taraf SDK yok</h2>
+            <p>Focus in Time herhangi bir analitik, reklam, atıf, kilitlenme raporu ya da başka bir üçüncü taraf SDK içermez. Uygulama ikilisinde izleyici yoktur. Uygulamanın bildirdiği tek ağ yeteneği, Apple'ın CloudKit çatısının iCloud ile senin adına konuşmak için ihtiyaç duyduğu yetkidir.</p>
+
+            <h2>8. Web sitesi analitiği (yalnızca bemolabs.com)</h2>
+            <p><strong>bemolabs.com</strong> web sitesi hangi sayfaların ziyaret edildiğini ve ziyaretçilerin sitede nasıl gezindiğini anlamak için <strong>Google Analytics 4</strong> (Ölçüm Kimliği <code>G-GF07MJT8CV</code>) kullanır. Google Analytics <em>yalnızca</em> web sitesinde yüklenir — Focus in Time uygulaması Google Analytics içermez.</p>
+            <p>Google Analytics rastgele bir istemci kimliği tutan birkaç birinci taraf çerez bırakır (<code>_ga</code>, <code>_ga_*</code>). Şunları toplar:</p>
+            <ul>
+                <li>bemolabs.com'da görüntülediğin sayfalar ve her birinde ne kadar kaldığın</li>
+                <li>Seni yönlendiren sayfa (varsa)</li>
+                <li>Ülke / bölge — IP'den türetilir; IP'n saklanmadan önce anonimleştirilir</li>
+                <li>Cihaz türü, tarayıcı, ekran boyutu, dil</li>
+            </ul>
+            <p>IP'ni veya seni kişisel olarak tanımlayan herhangi bir veriyi asla görmeyiz. Veri saklama 14 ay olarak ayarlandı; sonra Google olay düzeyindeki veriyi siler. Toplama <a href="https://policies.google.com/privacy?hl=tr" target="_blank" rel="noopener">Google'ın Gizlilik Politikası</a> kapsamındadır.</p>
+            <p>Site genelinde çıkış yapmak için Google'ın <a href="https://tools.google.com/dlpage/gaoptout?hl=tr" target="_blank" rel="noopener">Analytics Çıkış Tarayıcı Eklentisi</a>'ni yükle veya tarayıcı ayarlarında <code>_ga</code> çerezini engelle.</p>
+
+            <h2>9. Çocuklar</h2>
+            <p>Focus in Time App Store'da 4+ olarak derecelendirilmiştir. Reklam, uygulama içi satın alma, konum takibi, mikrofon veya kamera erişimi veya kullanıcı tarafından oluşturulan içeriğe bağlantı içermez. Çocuklar dahil hiç kimseden bilerek kişisel bilgi toplamaz.</p>
+
+            <h2>10. Haklarınız</h2>
+            <p>Aşağıdakilerin tümünü istediğin zaman yapabilirsin:</p>
+            <ul>
+                <li><strong>Bir cihazdaki veriyi sil:</strong> Uygulamayı silerek.</li>
+                <li><strong>iCloud kopyasını sil:</strong> <strong>Ayarlar → [Adın] → iCloud → Hesap Depolamasını Yönet → Focus in Time</strong> üzerinden, veya <code>iCloud.com.bemolabs.BemoPomodoro</code> konteynerini kaldırarak.</li>
+                <li><strong>Senkronizasyonu kapat:</strong> iCloud'dan çıkış yaparak veya Focus in Time için iCloud'u devre dışı bırakarak.</li>
+                <li><strong>Bildirim iznini iptal et:</strong> iOS / watchOS Ayarlar'dan.</li>
+                <li><strong>Bize her şeyi sor:</strong> <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a> adresine e-posta atarak.</li>
+            </ul>
+            <p>Bemo Labs verinin kopyasını hiç tutmadığından, bizim tarafımızda senin adına geri alınacak, düzeltilecek veya silinecek bir şey yoktur — yukarıdaki kontroller tüm seti oluşturur.</p>
+
+            <h2>11. Güvenlik</h2>
+            <p>Backend işletmiyoruz, dolayısıyla saldırıya uğrayabilecek bir Bemo Labs veritabanı yok. Cihazdaki veri iOS / iPadOS / macOS / watchOS sandbox'ı ile korunur. iCloud'daki veri Apple'ın standart CloudKit şifrelemesi ile (aktarımda ve durağanda) korunur; Apple'ın iCloud güvenlik modelini <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a> adresinden okuyabilirsin.</p>
+
+            <h2>12. Bu politikadaki değişiklikler</h2>
+            <p>Önemli bir şey değişirse yukarıdaki "Son güncelleme" tarihini değiştirir ve uygun olduğunda uygulamanın sürüm notlarında bahsederiz.</p>
+
+            <h2>13. İletişim</h2>
+            <p>Sorular, talepler ya da sadece merhaba demek için: <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>.</p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__wordmark">
+                <img src="/assets/brand/bemolabs-wordmark.svg" alt="Bemo Labs" />
+            </div>
+            <nav class="site-footer__links">
+                <a href="/">Bemo Labs</a>
+                <a href="/apps/focusintime/">Focus in Time</a>
+                <a href="/apps/focusintime/support.html" data-lang="en">Support</a>
+                <a href="/apps/focusintime/support.html?lang=tr" data-lang="tr">Destek</a>
+                <a href="mailto:hello@bemolabs.com">hello@bemolabs.com</a>
+            </nav>
+            <p style="margin:0; font-family:'JetBrains Mono',monospace; font-size:11px;">© Bemo Labs</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/lang.js"></script>
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang');
+            if (lang === 'tr' || lang === 'en') {
+                localStorage.setItem('bemolabs.lang', lang);
+                document.documentElement.lang = lang;
+                document.querySelectorAll('.lang-switch button').forEach((btn) => {
+                    btn.classList.toggle('is-active', btn.dataset.setLang === lang);
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
