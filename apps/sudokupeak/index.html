@@ -25,7 +25,7 @@
     <meta property="og:type" content="product" />
     <meta property="og:url" content="https://bemolabs.com/apps/sudokupeak/" />
 </head>
-<body>
+<body class="sp">
     <header class="site-header">
         <div class="container">
             <a class="site-header__brand" href="/" aria-label="Bemo Labs">
@@ -40,32 +40,91 @@
     </header>
 
     <main>
-        <section class="container">
-            <div class="product-hero">
-                <div class="product-hero__art">
-                    <img src="/apps/sudokupeak/assets/icon-1024.png" alt="Sudoku Peak app icon" />
-                </div>
-                <div class="product-hero__copy">
-                    <p class="eyebrow" data-lang="en">A Bemo Labs app</p>
-                    <p class="eyebrow" data-lang="tr">Bir Bemo Labs uygulaması</p>
+        <!-- ==================== 1. HERO ==================== -->
+        <section class="sp-hero container">
+            <img class="sp-hero__icon" src="/apps/sudokupeak/assets/icon-1024.png" alt="Sudoku Peak app icon" />
 
-                    <h1 data-lang="en">Sudoku, refined.</h1>
-                    <h1 data-lang="tr">Sudoku, sadeleştirildi.</h1>
+            <p class="eyebrow" data-lang="en">A Bemo Labs app</p>
+            <p class="eyebrow" data-lang="tr">Bir Bemo Labs uygulaması</p>
 
-                    <p data-lang="en">Sudoku Peak is a classic Sudoku built for players who come back every day. Daily puzzles, streaks, themes that unlock as you improve, Game Center leaderboards, an Apple Watch complication, and 21 languages — designed to feel calm.</p>
-                    <p data-lang="tr">Sudoku Peak, her gün dönen oyuncular için tasarlanmış klasik bir Sudoku. Günlük bulmacalar, seriler, ilerledikçe açılan temalar, Game Center sıralamaları, Apple Watch komplikasyonu ve 21 dil — sakin bir deneyim sunmak için tasarlandı.</p>
+            <h1 data-lang="en">Sudoku, refined.</h1>
+            <h1 data-lang="tr">Sudoku, sadeleştirildi.</h1>
 
-                    <div class="cta-row">
-                        <a class="btn btn--primary" href="https://apps.apple.com/us/app/sudoku-peak-brain-trainer/id6770268044" data-lang="en">Download on the App Store</a>
-                        <a class="btn btn--primary" href="https://apps.apple.com/us/app/sudoku-peak-brain-trainer/id6770268044" data-lang="tr">App Store'dan indir</a>
-                    </div>
+            <p class="sp-hero__tagline" data-lang="en">A calm, classic Sudoku for daily players.</p>
+            <p class="sp-hero__tagline" data-lang="tr">Günlük oyuncular için sakin, klasik bir Sudoku.</p>
 
-                    <div class="qr-card" style="margin-top:28px;">
-                        <img src="/apps/sudokupeak/assets/qr-appstore.png" alt="QR code to download Sudoku Peak on the App Store" />
-                    </div>
-                    <p class="qr-caption" data-lang="en">Scan to open in the App Store</p>
-                    <p class="qr-caption" data-lang="tr">App Store'da açmak için tara</p>
-                </div>
+            <p class="sp-hero__subline" data-lang="en">Daily puzzles, streaks, themes that unlock as you improve, Game Center leaderboards, an Apple Watch mini-game, and 21 languages — across iPhone, iPad and Apple Watch.</p>
+            <p class="sp-hero__subline" data-lang="tr">Günlük bulmacalar, seriler, ilerledikçe açılan temalar, Game Center sıralamaları, Apple Watch mini oyunu ve 21 dil — iPhone, iPad ve Apple Watch'ta.</p>
+
+            <div class="sp-badges">
+                <a class="sp-badge" href="https://apps.apple.com/us/app/sudoku-peak-brain-trainer/id6770268044" aria-label="Download on the App Store">
+                    <img src="/apps/sudokupeak/assets/badges/app-store.svg" alt="Download on the App Store" />
+                </a>
+            </div>
+
+            <!--
+              Vertical YouTube Short — portrait 9:16 frame, lite-embed facade.
+              Shows video-thumbnail.png + a play button; the real iframe (with
+              autoplay=1) is injected only on click.
+            -->
+            <div class="sp-video">
+                <button type="button" class="sp-video__frame sp-lite" data-yt-id="Se7DzaNSSHM" aria-label="Play the Sudoku Peak gameplay video">
+                    <img class="sp-lite__poster" src="/apps/sudokupeak/assets/video-thumbnail.png" loading="lazy" alt="Sudoku Peak gameplay video" />
+                    <span class="sp-lite__play" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="34" height="34"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.5-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14z" fill="currentColor"/></svg>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ==================== 2. GALLERY — iPhone ==================== -->
+        <section class="section container">
+            <p class="eyebrow" data-lang="en">A look inside</p>
+            <p class="eyebrow" data-lang="tr">İçeriden bir bakış</p>
+            <h2 data-lang="en">Clean, focused and yours to theme.</h2>
+            <h2 data-lang="tr">Sade, odaklı ve temaya göre senin.</h2>
+
+            <div class="sp-gallery">
+                <figure class="sp-shot">
+                    <img src="/apps/sudokupeak/assets/screenshots/01-home.png" loading="lazy" alt="Home screen — Classic and Killer modes with your daily streak" />
+                </figure>
+                <figure class="sp-shot">
+                    <img src="/apps/sudokupeak/assets/screenshots/02-killer-minimal.png" loading="lazy" alt="Killer Sudoku in the Minimal theme" />
+                </figure>
+                <figure class="sp-shot">
+                    <img src="/apps/sudokupeak/assets/screenshots/03-killer-dark.png" loading="lazy" alt="Killer Sudoku in the Dark theme" />
+                </figure>
+                <figure class="sp-shot">
+                    <img src="/apps/sudokupeak/assets/screenshots/04-classic-paper.png" loading="lazy" alt="Classic Sudoku in the Classic Paper theme" />
+                </figure>
+                <figure class="sp-shot">
+                    <img src="/apps/sudokupeak/assets/screenshots/05-stats.png" loading="lazy" alt="Statistics — records, medians and best scores by difficulty" />
+                </figure>
+                <figure class="sp-shot">
+                    <img src="/apps/sudokupeak/assets/screenshots/06-calendar.png" loading="lazy" alt="Daily puzzle calendar" />
+                </figure>
+            </div>
+        </section>
+
+        <!-- ==================== 3. GALLERY — Apple Watch ==================== -->
+        <section class="section container">
+            <p class="eyebrow" data-lang="en">On your wrist</p>
+            <p class="eyebrow" data-lang="tr">Bileğinde</p>
+            <h2 data-lang="en">A quick game on Apple Watch.</h2>
+            <h2 data-lang="tr">Apple Watch'ta hızlı bir oyun.</h2>
+            <p class="section-lead" data-lang="en">Play a fast 4×4 or 6×6 mini-game and keep your streak alive — right from your wrist.</p>
+            <p class="section-lead" data-lang="tr">Hızlı bir 4×4 veya 6×6 mini oyun oyna ve serini koru — doğrudan bileğinden.</p>
+
+            <div class="sp-gallery sp-gallery--watch">
+                <figure class="sp-shot sp-shot--watch">
+                    <img src="/apps/sudokupeak/assets/screenshots/watch/01-mini-game-4x4.png" loading="lazy" alt="Apple Watch 4×4 mini-game" />
+                </figure>
+                <figure class="sp-shot sp-shot--watch">
+                    <img src="/apps/sudokupeak/assets/screenshots/watch/02-mini-game-6x6.png" loading="lazy" alt="Apple Watch 6×6 mini-game" />
+                </figure>
+                <figure class="sp-shot sp-shot--watch">
+                    <img src="/apps/sudokupeak/assets/screenshots/watch/03-streak.png" loading="lazy" alt="Apple Watch streak view" />
+                </figure>
             </div>
         </section>
 
@@ -116,6 +175,22 @@
             </div>
         </section>
 
+        <!-- ==================== FINAL CTA ==================== -->
+        <section class="container">
+            <div class="sp-final">
+                <h2 data-lang="en">A puzzle for every day.</h2>
+                <h2 data-lang="tr">Her güne bir bulmaca.</h2>
+                <p data-lang="en">Download Sudoku Peak — free on the App Store.</p>
+                <p data-lang="tr">Sudoku Peak'i indir — App Store'da ücretsiz.</p>
+
+                <div class="sp-badges">
+                    <a class="sp-badge" href="https://apps.apple.com/us/app/sudoku-peak-brain-trainer/id6770268044" aria-label="Download on the App Store">
+                        <img src="/apps/sudokupeak/assets/badges/app-store.svg" alt="Download on the App Store" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <section class="section container">
             <h2 data-lang="en">Legal &amp; support</h2>
             <h2 data-lang="tr">Yasal ve destek</h2>
@@ -158,6 +233,24 @@
                     btn.classList.toggle('is-active', btn.dataset.setLang === lang);
                 });
             }
+        })();
+    </script>
+    <!-- Lite YouTube embed: swap the poster facade for the real iframe on click. -->
+    <script>
+        (function () {
+            const lite = document.querySelector('.sp-lite');
+            if (!lite) return;
+            lite.addEventListener('click', function () {
+                const iframe = document.createElement('iframe');
+                iframe.src = 'https://www.youtube.com/embed/' + lite.dataset.ytId + '?autoplay=1';
+                iframe.title = 'Sudoku Peak gameplay video';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.allowFullscreen = true;
+                const frame = document.createElement('div');
+                frame.className = 'sp-video__frame';
+                frame.appendChild(iframe);
+                lite.replaceWith(frame);
+            }, { once: true });
         })();
     </script>
 </body>
