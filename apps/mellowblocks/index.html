@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mellow Blocks — Bemo Labs</title>
-    <meta name="description" content="Mellow Blocks is a calm take on the block puzzle — a quieter, more thoughtful version of the genre. Coming to iOS and Android." />
+    <title>Mellow Blocks — A cozy block puzzle · Bemo Labs</title>
+    <meta name="description" content="A cozy, hand-painted block puzzle. Free on iOS and Android, in 13 languages. The block puzzle that doesn't rush you." />
 
     <link rel="icon" type="image/svg+xml" href="/assets/brand/bemolabs-icon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/bemolabs-icon-32.png" />
@@ -19,13 +19,16 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF07MJT8CV"></script>
     <script src="/assets/js/analytics.js"></script>
 
-    <meta property="og:title" content="Mellow Blocks" />
-    <meta property="og:description" content="Blocks that fit, calmly." />
-    <meta property="og:image" content="/apps/mellowblocks/assets/icon-1024.png" />
+    <!-- Open Graph / social sharing -->
+    <meta property="og:title" content="Mellow Blocks — A cozy block puzzle" />
+    <meta property="og:description" content="The block puzzle that doesn't rush you. A cozy, hand-painted block puzzle — free on iOS and Android, in 13 languages." />
+    <!-- TODO: add OG image before launch — replace with a 1200x630 gameplay/branded image. -->
+    <meta property="og:image" content="/apps/mellowblocks/assets/og-image.png" />
     <meta property="og:type" content="product" />
     <meta property="og:url" content="https://bemolabs.com/apps/mellowblocks/" />
+    <meta name="twitter:card" content="summary_large_image" />
 </head>
-<body>
+<body class="mb">
     <header class="site-header">
         <div class="container">
             <a class="site-header__brand" href="/" aria-label="Bemo Labs">
@@ -40,34 +43,137 @@
     </header>
 
     <main>
-        <section class="container">
-            <div class="product-hero">
-                <div class="product-hero__art">
-                    <img src="/apps/mellowblocks/assets/icon-1024.png" alt="Mellow Blocks app icon" />
+        <!-- ==================== 1. HERO ==================== -->
+        <section class="mb-hero container">
+            <img class="mb-hero__icon" src="/apps/mellowblocks/assets/icon-1024.png" alt="Mellow Blocks app icon" />
+
+            <p class="eyebrow" data-lang="en">A Bemo Labs game</p>
+            <p class="eyebrow" data-lang="tr">Bir Bemo Labs oyunu</p>
+
+            <h1>Mellow Blocks</h1>
+
+            <p class="mb-hero__tagline" data-lang="en">The block puzzle that doesn't rush you.</p>
+            <p class="mb-hero__tagline" data-lang="tr">Seni acele ettirmeyen blok bulmacası.</p>
+
+            <p class="mb-hero__subline" data-lang="en">A cozy, hand-painted block puzzle. Free on iOS and Android, in 13 languages.</p>
+            <p class="mb-hero__subline" data-lang="tr">Sıcacık, elle boyanmış bir blok bulmacası. iOS ve Android'de ücretsiz, 13 dilde.</p>
+
+            <div class="mb-badges">
+                <a class="mb-badge" href="https://apps.apple.com/us/app/mellow-blocks/id6773086496" aria-label="Download on the App Store">
+                    <img src="/apps/mellowblocks/assets/badges/app-store.svg" alt="Download on the App Store" />
+                </a>
+                <a class="mb-badge" href="https://play.google.com/store/apps/details?id=com.bemolabs.mellowblocks" aria-label="Get it on Google Play">
+                    <img src="/apps/mellowblocks/assets/badges/google-play.svg" alt="Get it on Google Play" />
+                </a>
+            </div>
+
+            <!--
+              Vertical YouTube Short — portrait 9:16 frame, lite-embed facade.
+              Shows video-thumbnail.png + a play button; the real iframe (with
+              autoplay=1) is injected only on click. Video ID nsgA0m114G4 is final.
+            -->
+            <div class="mb-video">
+                <button type="button" class="mb-video__frame mb-lite" data-yt-id="nsgA0m114G4" aria-label="Play the Mellow Blocks gameplay trailer">
+                    <img class="mb-lite__poster" src="/apps/mellowblocks/assets/video-thumbnail.png" loading="lazy" alt="Mellow Blocks gameplay trailer" />
+                    <span class="mb-lite__play" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="34" height="34"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.5-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14z" fill="currentColor"/></svg>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ==================== 2. GALLERY ==================== -->
+        <section class="section container mb-gallery-section">
+            <p class="eyebrow" data-lang="en">A look inside</p>
+            <p class="eyebrow" data-lang="tr">İçeriden bir bakış</p>
+            <h2 data-lang="en">Soft, warm and full of story.</h2>
+            <h2 data-lang="tr">Yumuşak, sıcak ve hikâye dolu.</h2>
+
+            <div class="mb-gallery">
+                <figure class="mb-shot">
+                    <img src="/apps/mellowblocks/assets/screenshots/04_dialogue.png" loading="lazy" alt="Meet your companions — the character Cloud greets you" />
+                </figure>
+                <figure class="mb-shot">
+                    <img src="/apps/mellowblocks/assets/screenshots/03_map_early.png" loading="lazy" alt="Journey through 5 worlds — the adventure map among the clouds" />
+                </figure>
+                <figure class="mb-shot">
+                    <img src="/apps/mellowblocks/assets/screenshots/06_map_late.png" loading="lazy" alt="From Clouds to Infinity — the galaxy world map" />
+                </figure>
+                <figure class="mb-shot">
+                    <img src="/apps/mellowblocks/assets/screenshots/07_theme.png" loading="lazy" alt="A theme for every mood — the theme selection screen" />
+                </figure>
+                <figure class="mb-shot">
+                    <img src="/apps/mellowblocks/assets/screenshots/05_powerup.png" loading="lazy" alt="Unleash clever power-ups — gameplay with power-ups" />
+                </figure>
+            </div>
+        </section>
+
+        <!-- ==================== 3. FEATURES ==================== -->
+        <section class="section container">
+            <p class="eyebrow" data-lang="en">What's inside</p>
+            <p class="eyebrow" data-lang="tr">Neler var</p>
+            <h2 data-lang="en">A puzzle to slow down with.</h2>
+            <h2 data-lang="tr">Yavaşlamak için bir bulmaca.</h2>
+
+            <div class="mb-features">
+                <div class="mb-feature">
+                    <div class="mb-feature__icon" aria-hidden="true">🗺️</div>
+                    <h3 data-lang="en">A 50-level journey</h3>
+                    <h3 data-lang="tr">50 bölümlük bir yolculuk</h3>
+                    <p data-lang="en">Drift through Clouds, Stars, Moon, Galaxy and Infinity, guided by Mellow and friends.</p>
+                    <p data-lang="tr">Bulutlar, Yıldızlar, Ay, Galaksi ve Sonsuzluk arasında Mellow ve arkadaşlarıyla süzül.</p>
                 </div>
-                <div class="product-hero__copy">
-                    <p class="eyebrow" data-lang="en">A Bemo Labs app</p>
-                    <p class="eyebrow" data-lang="tr">Bir Bemo Labs uygulaması</p>
-
-                    <h1 data-lang="en">Blocks that fit, calmly.</h1>
-                    <h1 data-lang="tr">Sakinlikle yerleşen bloklar.</h1>
-
-                    <p data-lang="en">Mellow Blocks is a quieter take on the block puzzle. We're polishing the final details now — it'll land on iOS and Android in the coming weeks.</p>
-                    <p data-lang="tr">Mellow Blocks, blok bulmacalarına daha sakin bir yaklaşım. Şu an son detayları rötuşluyoruz — önümüzdeki haftalarda iOS ve Android'de.</p>
-
-                    <div class="cta-row">
-                        <span class="btn btn--disabled" data-lang="en">Coming to the App Store</span>
-                        <span class="btn btn--disabled" data-lang="tr">Yakında App Store'da</span>
-                        <span class="btn btn--disabled" data-lang="en">Coming to Google Play</span>
-                        <span class="btn btn--disabled" data-lang="tr">Yakında Google Play'de</span>
-                    </div>
-
-                    <p style="margin-top:24px; font-size:13px;" data-lang="en">We'll drop QR codes here when Mellow Blocks goes live on each store.</p>
-                    <p style="margin-top:24px; font-size:13px;" data-lang="tr">Mellow Blocks her mağazada yayına girdiğinde buraya QR kodları yerleştireceğiz.</p>
+                <div class="mb-feature">
+                    <div class="mb-feature__icon" aria-hidden="true">🌙</div>
+                    <h3 data-lang="en">Calm by design</h3>
+                    <h3 data-lang="tr">Tasarımı gereği sakin</h3>
+                    <p data-lang="en">Occasional ads, no pressure. A puzzle to slow down with.</p>
+                    <p data-lang="tr">Ara sıra reklam, hiç baskı yok. Yavaşlamak için bir bulmaca.</p>
+                </div>
+                <div class="mb-feature">
+                    <div class="mb-feature__icon" aria-hidden="true">🎲</div>
+                    <h3 data-lang="en">Three ways to play</h3>
+                    <h3 data-lang="tr">Üç oynama biçimi</h3>
+                    <p data-lang="en">Classic, Gravity (chain clears), and the story-driven Adventure.</p>
+                    <p data-lang="tr">Klasik, Yerçekimi (zincirleme temizleme) ve hikâye odaklı Macera.</p>
+                </div>
+                <div class="mb-feature">
+                    <div class="mb-feature__icon" aria-hidden="true">🎨</div>
+                    <h3 data-lang="en">Yours to customize</h3>
+                    <h3 data-lang="tr">Sana göre özelleştir</h3>
+                    <p data-lang="en">6 themes, multiple color palettes, colorblind-friendly options.</p>
+                    <p data-lang="tr">6 tema, birçok renk paleti, renk körü dostu seçenekler.</p>
+                </div>
+                <div class="mb-feature">
+                    <div class="mb-feature__icon" aria-hidden="true">🌍</div>
+                    <h3 data-lang="en">Play in 13 languages</h3>
+                    <h3 data-lang="tr">13 dilde oyna</h3>
+                    <p data-lang="en">Fully localized, including right-to-left Arabic.</p>
+                    <p data-lang="tr">Sağdan sola Arapça dahil, tamamen yerelleştirilmiş.</p>
                 </div>
             </div>
         </section>
 
+        <!-- ==================== 4. FINAL CTA ==================== -->
+        <section class="container">
+            <div class="mb-final">
+                <h2 data-lang="en">Easy to start. Hard to put down.</h2>
+                <h2 data-lang="tr">Başlaması kolay. Bırakması zor.</h2>
+                <p data-lang="en">Download Mellow Blocks — free.</p>
+                <p data-lang="tr">Mellow Blocks'u indir — ücretsiz.</p>
+
+                <div class="mb-badges">
+                    <a class="mb-badge" href="https://apps.apple.com/us/app/mellow-blocks/id6773086496" aria-label="Download on the App Store">
+                        <img src="/apps/mellowblocks/assets/badges/app-store.svg" alt="Download on the App Store" />
+                    </a>
+                    <a class="mb-badge" href="https://play.google.com/store/apps/details?id=com.bemolabs.mellowblocks" aria-label="Get it on Google Play">
+                        <img src="/apps/mellowblocks/assets/badges/google-play.svg" alt="Get it on Google Play" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal & support -->
         <section class="section container">
             <h2 data-lang="en">Legal &amp; support</h2>
             <h2 data-lang="tr">Yasal ve destek</h2>
@@ -110,6 +216,25 @@
                     btn.classList.toggle('is-active', btn.dataset.setLang === lang);
                 });
             }
+        })();
+    </script>
+    <!-- Lite YouTube embed: swap the poster facade for the real iframe on click. -->
+    <script>
+        (function () {
+            const lite = document.querySelector('.mb-lite');
+            if (!lite) return;
+            lite.addEventListener('click', function () {
+                const iframe = document.createElement('iframe');
+                iframe.src = 'https://www.youtube.com/embed/' + lite.dataset.ytId + '?autoplay=1';
+                iframe.title = 'Mellow Blocks gameplay trailer';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.allowFullscreen = true;
+                // Reuse the same phone-frame element; just swap the button for a div holding the iframe.
+                const frame = document.createElement('div');
+                frame.className = 'mb-video__frame';
+                frame.appendChild(iframe);
+                lite.replaceWith(frame);
+            }, { once: true });
         })();
     </script>
 </body>
